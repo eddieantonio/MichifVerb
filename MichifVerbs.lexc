@@ -18,6 +18,9 @@ Multichar_Symbols
 
 !! Flags for Michif verbal morphology
 
+@U.order.indep@ 
+@U.order.conj@  
+
 !! Groups of Michif verbs
 
 !! VAI: Animate intransitive
@@ -36,6 +39,10 @@ kiweew      VAIStem;
 meekiw      VAIStem;
 
 LEXICON Order
+
+@U.order.indep@ Independant ;
+@U.order.conj@  Conjunct    ;
+
 
 
 
