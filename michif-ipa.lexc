@@ -1,0 +1,82 @@
+Multichar_Symbols aː oː ʰp ʰt ʰk ʰʧ ã ɛ̃ ɪ̃ ɔ̃
+
+LEXICON Root 
+KnownMappings ;
+UnknownMappings ;
+
+LEXICON KnownMappings
+KnownVowels ;
+KnownConsonants ;
+
+LEXICON KnownConsonants
+! Stops
+ʰp:hp # ;
+p # ;
+b # ;
+
+ʰt:ht # ;
+t # ;
+d # ;
+
+ʰk:hk # ;
+k #;
+ɡ:g # ;
+
+! Fricatives
+f # ;
+v # ;
+
+s # ;
+z # ;
+
+ʃ:sh # ;
+ʒ:zh # ;
+
+h # ;
+
+! Affricates
+ʰʧ:hch # ;
+ʧ:ch # ;
+!!!dunno how to write /ʤ/!!!
+
+m # ;
+n # ;
+
+r # ;
+l # ;
+
+w # ;
+j:y # ;
+
+
+LEXICON KnownVowels
+OralVowels ;
+NasalizedVowels ;
+
+
+LEXICON OralVowels
+a # ;
+aː:aa # ;
+æ:ae # ;
+ɛ:e # ;
+e:ee # ;
+ɪ:i # ;
+i:ii # ;
+ɔ:o # ;
+oː:oo # ;
+ʊ:u # ;
+u:uu # ;
+
+
+LEXICON NasalizedVowels
+ã:aꞥ # ;
+ɛ̃:eꞥ # ;
+ɪ̃:iꞥ # ;
+ɔ̃:oꞥ # ;
+
+
+LEXICON UnknownMappings
+œ:� # ;
+ɑ:� # ;
+y:� # ;
+ʤ:� # ;
