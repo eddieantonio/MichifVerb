@@ -1,0 +1,52 @@
+Multichar_Symbols
+
+!! Below are the multichar symbols relevant to Michif verbal morphology
+
++Obv  
++Prs  
++Fut  
++Pst 
++Incl
++Excl
+
++1SG
++2SG
++3SGA
++NON3SG
++1PL
++3PLA
+
+!! Flags for Michif verbal morphology
+
+!! Groups of Michif verbs
+
+!! VAI: Animate intransitive
+
+LEXICON Root
+
+VAIStem ;
+
+LEXICON Verb
+
+ayaw        VAIStem;
+itohteew    VAIStem;
+shipweeteew VAIStem;
+itweew      VAIStem;
+kiweew      VAIStem;
+meekiw      VAIStem;
+
+LEXICON Order
+
+
+
+
+
+
+
+
+
+
+
+
+
+
