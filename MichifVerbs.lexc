@@ -24,6 +24,10 @@ Multichar_Symbols
 @P.order.conj@
 @R.order.indep@
 @R.order.conj@
+@P.person.ni@
+@R.person.ni@
+@R.person.ki@
+@P.person.ki@
 
 !! Groups of Michif verbs
 
@@ -35,9 +39,9 @@ LEXICON Root
 
 LEXICON Verb
 
-@P.order.indep@:@P.order.indep@ni%< VAIStem ;
-@P.order.indep@:@P.order.indep@ki%< VAIStem ;
-@P.order.conj@:@P.order.conj@ee- VAIStem ;
+@P.order.indep@@P.person.ni@:@P.order.indep@@P.person.ni@ni%< VAIStem ;
+@P.order.indep@@P.person.ki@:@P.order.indep@@P.person.ki@ki%< VAIStem ;
+@P.order.conj@:@P.order.conj@ee-%< VAIStem ;
 
 LEXICON VAIStem
 
@@ -61,8 +65,17 @@ LEXICON VAIOrder
 
 LEXICON VAIPersonMarking
 
-@R.order.indep@[1SG]:@R.order.indep@aan VAIObiative ;
-@R.order.conj@[1SG]:@R.order.conj@yaan VAIObiative ;
+@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObiative ;
+@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObiative ;
+@R.order.indep@[3SGA]:@R.order.indep@eew VAIObiative ;
+@R.order.indep@[NON3SG]:@R.order.indep@een VAIObiative ;
+@R.order.indep@[1PL]:@R.order.indep@eenaan VAIObiative ;
+!@R.order.indep@[2PL]:@R.order.indep@ VAIObiative ;
+@R.order.indep@[3PLA]:@R.order.indep@eewak VAIObiative ;
+
+@R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObiative ;
+@R.order.conj@[2SG]:@R.order.conj@eeyan VAIObiative ;
+@R.order.conj@[3SG]:@R.order.conj@eet VAIObiative ;
 
 LEXICON VAIObiative 
 0 # ;
