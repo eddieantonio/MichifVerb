@@ -2,6 +2,8 @@ Multichar_Symbols
 
 !! Below are the multichar symbols relevant to Michif verbal morphology
 
+[VAI]
+
 [Obv]
 [Prs]
 [Fut]
@@ -17,31 +19,47 @@ Multichar_Symbols
 [3PLA]
 
 !! Flags for Michif verbal morphology
-
-@U.order.indep@ 
-@U.order.conj@  
+ 
+@P.order.indep@
+@P.order.conj@
+@R.order.indep@
+@R.order.conj@
 
 !! Groups of Michif verbs
 
 !! VAI: Animate intransitive
 
 LEXICON Root
+0 Verb ;
 
-VAIStem ;
 
 LEXICON Verb
 
-ayaw        VAIStem;
-itohteew    VAIStem;
-shipweeteew VAIStem;
-itweew      VAIStem;
-kiweew      VAIStem;
-meekiw      VAIStem;
+@P.order.indep@:@P.order.indep@ni VAIStem ;
+@P.order.indep@:@P.order.indep@ki VAIStem ;
+@P.order.conj@:@P.order.conj@ee VAIStem ;
 
-LEXICON Order
+LEXICON VAIStem
 
-@U.order.indep@ Independant ;
-@U.order.conj@  Conjunct    ;
+ayaw        VAIInflection;
+itohteew    VAIInflection;
+shipweeteew VAIInflection;
+itweew      VAIInflection;
+kiweew      VAIInflection;
+meekiw      VAIInflection;
+
+LEXICON VAIInflection 
+
+[VAI]:0 VAIPersonMarking ;
+
+LEXICON VAIPersonMarking 
+@R.order.indep@:@R.order.indep@aan VAIObiative ;
+@R.order.conj@:@R.order.conj@yaan VAIObiative ;
+
+
+LEXICON VAIObiative 
+0 # ;
+
 
 
 
