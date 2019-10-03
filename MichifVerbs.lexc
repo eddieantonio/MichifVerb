@@ -35,27 +35,34 @@ LEXICON Root
 
 LEXICON Verb
 
-@P.order.indep@:@P.order.indep@ni VAIStem ;
-@P.order.indep@:@P.order.indep@ki VAIStem ;
-@P.order.conj@:@P.order.conj@ee VAIStem ;
+@P.order.indep@:@P.order.indep@ni%< VAIStem ;
+@P.order.indep@:@P.order.indep@ki%< VAIStem ;
+@P.order.conj@:@P.order.conj@ee- VAIStem ;
 
 LEXICON VAIStem
 
-ayaw        VAIInflection;
-itohteew    VAIInflection;
-shipweeteew VAIInflection;
-itweew      VAIInflection;
-kiweew      VAIInflection;
-meekiw      VAIInflection;
+! ayaw        VAIInflection;
+itohteew:itoht    VAIInflection;
+! shipweeteew VAIInflection;
+! itweew      VAIInflection;
+! kiweew      VAIInflection;
+! meekiw      VAIInflection;
+
+! I	         nititohtaan	ee-itohteeyaan
+! you (one)	 kititohtaan	ee-itohteeyan
 
 LEXICON VAIInflection 
 
-[VAI]:0 VAIPersonMarking ;
+[VAI]:%> VAIOrder ;
 
-LEXICON VAIPersonMarking 
-@R.order.indep@:@R.order.indep@aan VAIObiative ;
-@R.order.conj@:@R.order.conj@yaan VAIObiative ;
+LEXICON VAIOrder
+@R.order.indep@[IND]:@R.order.indep@ VAIPersonMarking;
+@R.order.conj@[CONJ]:@R.order.conj@ VAIPersonMarking;
 
+LEXICON VAIPersonMarking
+
+@R.order.indep@[1SG]:@R.order.indep@aan VAIObiative ;
+@R.order.conj@[1SG]:@R.order.conj@yaan VAIObiative ;
 
 LEXICON VAIObiative 
 0 # ;
