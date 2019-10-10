@@ -3,3 +3,6 @@
 
 # Foma stuff
 *.fomabin
+
+# Pairs
+plain-text.txt

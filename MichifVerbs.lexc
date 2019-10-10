@@ -30,6 +30,10 @@ Multichar_Symbols
 @R.person.ki@
 @P.tense.kii@
 @R.tense.kii@
+@P.tense.ka@
+@R.tense.ka@
+@P.tense.ka@
+@D.tense@
 
 !! Groups of Michif verbs
 
@@ -41,13 +45,14 @@ LEXICON Root
 
 LEXICON Verb
 
-@P.order.indep@@P.person.ni@:@P.order.indep@@P.person.ni@ni%< VAIStem ;
-@P.order.indep@@P.person.ki@:@P.order.indep@@P.person.ki@ki%< VAIStem ;
-@P.order.indep@@P.person.ni@@P.tense.kii@:@P.order.indep@@P.person.ni@@P.tense.kii@kii%< VAIStem ;
-@P.order.indep@@P.person.ki@@P.tense.kii@:@P.order.indep@@P.person.ki@@P.tense.kii@kii%< VAIStem ;
+@P.order.indep@@P.person.ni@:@P.order.indep@@P.person.ni@ni%< TenseMarking ;
+@P.order.indep@@P.person.ki@:@P.order.indep@@P.person.ki@ki%< TenseMarking ;
 
-@P.order.conj@:@P.order.conj@ee-%< VAIStem ;
-@P.order.conj@@P.tense.kii@:@P.order.conj@@P.tense.kii@kii%< VAIStem ;
+@P.order.conj@:@P.order.conj@ee-%< TenseMarking ; ! TODO: Ask Heather about hyphen
+
+LEXICON TenseMarking
+0 VAIStem ; ! No tense marking
+@P.tense.kii@:@P.tense.kii@kii%< VAIStem ;
 
 
 LEXICON VAIStem
@@ -67,15 +72,12 @@ LEXICON VAIInflection
 [VAI]:%> VAIOrder ;
 
 LEXICON VAIOrder
-@R.order.indep@[IND]:@R.order.indep@ VAITense ;
-@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
+@R.order.indep@[IND]:@R.order.indep@ Tense ;
+@R.order.conj@[CONJ]:@R.order.conj@ Tense ;
 
-LEXICON VAITense
-
-@R.order.indep@@R.person.ni@@R.tense.kii@[PST]:@R.order.indep@@R.person.ni@@R.tense.kii@ VAIPersonMarking ;
-@R.order.indep@@R.person.ki@@R.tense.kii@[PST]:@R.order.indep@@R.person.ki@@R.tense.kii@ VAIPersonMarking ;
-
-@R.order.conj@@R.tense.kii@[PST]:@R.order.conj@@R.tense.kii@ VAIPersonMarking ;
+LEXICON Tense
+@D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
+@R.tense.kii@[PST]:@R.tense.kii@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
