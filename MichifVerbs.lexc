@@ -4,12 +4,12 @@ Multichar_Symbols
 
 [VAI]
 
-[Obv]
-[Prs]
-[Fut]
-[Pst]
-[Incl]
-[Excl]
+[OBV]
+[PRS]
+[FUT]
+[PST]
+[INC]
+[EXCL]
 
 [1SG]
 [2SG]
@@ -21,13 +21,15 @@ Multichar_Symbols
 !! Flags for Michif verbal morphology
  
 @P.order.indep@
-@P.order.conj@
 @R.order.indep@
+@P.order.conj@
 @R.order.conj@
 @P.person.ni@
 @R.person.ni@
-@R.person.ki@
 @P.person.ki@
+@R.person.ki@
+@P.tense.kii@
+@R.tense.kii@
 
 !! Groups of Michif verbs
 
@@ -41,7 +43,12 @@ LEXICON Verb
 
 @P.order.indep@@P.person.ni@:@P.order.indep@@P.person.ni@ni%< VAIStem ;
 @P.order.indep@@P.person.ki@:@P.order.indep@@P.person.ki@ki%< VAIStem ;
+@P.order.indep@@P.person.ni@@P.tense.kii@:@P.order.indep@@P.person.ni@@P.tense.kii@kii%< VAIStem ;
+@P.order.indep@@P.person.ki@@P.tense.kii@:@P.order.indep@@P.person.ki@@P.tense.kii@kii%< VAIStem ;
+
 @P.order.conj@:@P.order.conj@ee-%< VAIStem ;
+@P.order.conj@@P.tense.kii@:@P.order.conj@@P.tense.kii@kii%< VAIStem ;
+
 
 LEXICON VAIStem
 
@@ -60,8 +67,15 @@ LEXICON VAIInflection
 [VAI]:%> VAIOrder ;
 
 LEXICON VAIOrder
-@R.order.indep@[IND]:@R.order.indep@ VAIPersonMarking;
-@R.order.conj@[CONJ]:@R.order.conj@ VAIPersonMarking;
+@R.order.indep@[IND]:@R.order.indep@ VAITense ;
+@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
+
+LEXICON VAITense
+
+@R.order.indep@@R.person.ni@@R.tense.kii@[PST]:@R.order.indep@@R.person.ni@@R.tense.kii@ VAIPersonMarking ;
+@R.order.indep@@R.person.ki@@R.tense.kii@[PST]:@R.order.indep@@R.person.ki@@R.tense.kii@ VAIPersonMarking ;
+
+@R.order.conj@@R.tense.kii@[PST]:@R.order.conj@@R.tense.kii@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
@@ -78,6 +92,7 @@ LEXICON VAIPersonMarking
 @R.order.conj@[3SG]:@R.order.conj@eet VAIObiative ;
 
 LEXICON VAIObiative 
+
 0 # ;
 
 
