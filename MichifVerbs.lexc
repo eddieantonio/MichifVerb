@@ -53,6 +53,7 @@ LEXICON Verb
 LEXICON TenseMarking
 0 VAIStem ; ! No tense marking
 @P.tense.kii@:@P.tense.kii@kii%< VAIStem ;
+@P.tense.ka@:@P.tense.ka@ka%< VAIStem ;
 
 
 LEXICON VAIStem
@@ -78,6 +79,8 @@ LEXICON VAIOrder
 LEXICON Tense
 @D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
 @R.tense.kii@[PST]:@R.tense.kii@ VAIPersonMarking ;
+@R.tense.ka@[FUT]:@R.tense.ka@ VAIPersonMarking ;
+
 
 LEXICON VAIPersonMarking
 
