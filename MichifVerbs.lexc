@@ -34,12 +34,18 @@ Multichar_Symbols
 @R.tense.ka@
 @P.tense.ka@
 @D.tense@
+@P.obv.yi@
+@R.obv.yi@
+@P.obv.a@
+@R.obv.a@
+@D.obv@
 
 !! Groups of Michif verbs
 
 !! VAI: Animate intransitive
 
 LEXICON Root
+
 0 Verb ;
 
 
@@ -51,6 +57,7 @@ LEXICON Verb
 @P.order.conj@:@P.order.conj@ee-%< TenseMarking ; ! TODO: Ask Heather about hyphen
 
 LEXICON TenseMarking
+
 0 VAIStem ; ! No tense marking
 @P.tense.kii@:@P.tense.kii@kii%< VAIStem ;
 @P.tense.ka@:@P.tense.ka@ka%< VAIStem ;
@@ -59,7 +66,7 @@ LEXICON TenseMarking
 LEXICON VAIStem
 
 ! ayaw        VAIInflection;
-itohteew:itoht    VAIInflection;
+itohteew:itoht    ObviativeMarking;
 ! shipweeteew VAIInflection;
 ! itweew      VAIInflection;
 ! kiweew      VAIInflection;
@@ -67,6 +74,12 @@ itohteew:itoht    VAIInflection;
 
 ! I	         nititohtaan	ee-itohteeyaan
 ! you (one)	 kititohtaan	ee-itohteeyan
+
+LEXICON ObviativeMarking
+
+0 VAIInflection ; ! No obviative marking
+@P.obv.yi@:@P.obv.yi@yi%< VAIInflection;
+@P.order.indep@@P.obv.a@:@P.order.indep@@P.obv.a@a%< VAIInflection ;
 
 LEXICON VAIInflection 
 
@@ -77,41 +90,33 @@ LEXICON VAIOrder
 @R.order.conj@[CONJ]:@R.order.conj@ Tense ;
 
 LEXICON Tense
-@D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
-@R.tense.kii@[PST]:@R.tense.kii@ VAIPersonMarking ;
-@R.tense.ka@[FUT]:@R.tense.ka@ VAIPersonMarking ;
+@D.tense@[PRS]:@D.tense@ VAIObviative1 ;
+@R.tense.kii@[PST]:@R.tense.kii@ VAIObviative1 ;
+@R.tense.ka@[FUT]:@R.tense.ka@ VAIObviative1 ;
 
+LEXICON VAIObviative1
+
+@D.obv@:@D.obv@ VAIPersonMarking ;
+@R.obviative.yi@[OBV]:@R.obviative.yi@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
-@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObiative ;
-@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObiative ;
-@R.order.indep@[3SGA]:@R.order.indep@eew VAIObiative ;
-@R.order.indep@[NON3SG]:@R.order.indep@een VAIObiative ;
-@R.order.indep@[1PL]:@R.order.indep@eenaan VAIObiative ;
-!@R.order.indep@[2PL]:@R.order.indep@ VAIObiative ;
-@R.order.indep@[3PLA]:@R.order.indep@eewak VAIObiative ;
+@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative2 ;
+@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative2 ;
+@R.order.indep@[3SGA]:@R.order.indep@eew VAIObviative2 ;
+@R.order.indep@[NON3SG]:@R.order.indep@een VAIObviative2 ;
+@R.order.indep@[1PL]:@R.order.indep@eenaan VAIObviative2 ;
+!@R.order.indep@[2PL]:@R.order.indep@ VAIObviative2 ;
+@R.order.indep@[3PLA]:@R.order.indep@eewak VAIObviative2 ;
 
-@R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObiative ;
-@R.order.conj@[2SG]:@R.order.conj@eeyan VAIObiative ;
-@R.order.conj@[3SG]:@R.order.conj@eet VAIObiative ;
+@R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative2 ;
+@R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative2 ;
+@R.order.conj@[3SG]:@R.order.conj@eet VAIObviative2 ;
 
-LEXICON VAIObiative 
+LEXICON VAIObviative2
+
+@R.order.indep@@R.obv.a@[OBV]:@R.order.indep@@R.obv.a@ Next ;
+
+LEXICON Next
 
 0 # ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
