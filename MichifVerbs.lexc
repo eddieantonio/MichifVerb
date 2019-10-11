@@ -22,6 +22,7 @@ Multichar_Symbols
 
 @P.order.indep@
 @R.order.indep@
+@D.order.indep@
 @P.order.conj@
 @R.order.conj@
 @P.person.ni@
@@ -85,8 +86,7 @@ LEXICON VAIInflection
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
 0 VAIOrder ; ! No obviative marking
-@P.obv.yi@:@P.obv.yi@yi%< VAIOrder; !! Can happen in independent of conjunct
-@R.order.indep@@P.obv.a@:@R.order.indep@@P.obv.a@a%< VAIOrder ; !! Can happen only in independent.
+@P.obv.yi@:@P.obv.yi@yi%< VAIOrder;
 
 LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ Tense ;
@@ -94,33 +94,31 @@ LEXICON VAIOrder !! Outputs the order tag
 
 
 LEXICON Tense   !! Outputs the tense tag
-@D.tense@[PRS]:@D.tense@ VAIObviative1 ;
-@R.tense.kii@[PST]:@R.tense.kii@ VAIObviative1 ;
-@R.tense.ka@[FUT]:@R.tense.ka@ VAIObviative1 ;
-
-LEXICON VAIObviative1  !! Outputs the [OBV] tag
-
-@D.obv@ VAIPersonMarking ;  !! No obviative
-@R.obv@[OBV]:@R.obv@ VAIPersonMarking ;
+@D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
+@R.tense.kii@[PST]:@R.tense.kii@ VAIPersonMarking ;
+@R.tense.ka@[FUT]:@R.tense.ka@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
-@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative2 ;
-@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative2 ;
-@R.order.indep@[3SGA]:@R.order.indep@eew VAIObviative2 ;
-@R.order.indep@[NON3SG]:@R.order.indep@een VAIObviative2 ;
-@R.order.indep@[1PL]:@R.order.indep@eenaan VAIObviative2 ;
-!@R.order.indep@[2PL]:@R.order.indep@ VAIObviative2 ;
-@R.order.indep@[3PLA]:@R.order.indep@eewak VAIObviative2 ;
+@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative1 ;
+@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative1 ;
+@R.order.indep@[3SGA]:@R.order.indep@eew VAIObviative1 ;
+@R.order.indep@[NON3SG]:@R.order.indep@een VAIObviative1 ;
+@R.order.indep@[1PL]:@R.order.indep@eenaan VAIObviative1 ;
+!@R.order.indep@[2PL]:@R.order.indep@ VAIObviative1 ;
+@R.order.indep@[3PLA]:@R.order.indep@eewak VAIObviative1 ;
 
-@R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative2 ;
-@R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative2 ;
-@R.order.conj@[3SG]:@R.order.conj@eet VAIObviative2 ;
+@R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative1 ;
+@R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative1 ;
+@R.order.conj@[3SG]:@R.order.conj@eet VAIObviative1 ;
 
-LEXICON VAIObviative2
+LEXICON VAIObviative1
+@D.obv@                EndVerb ; !! Not obviative, don't care
+@R.obv@[OBV]:@R.obv@   VAIObviative2 ;
 
-!! I literally have no idea what's supposed to happen here.
-0 EndVerb ;
+LEXICON VAIObviative2 !! Here, the word is DEFINITELY obviative!
+@D.order.indep@:@D.order.indep@     EndVerb ;
+@R.order.indep@:@R.order.indep@%<a  EndVerb ;
 
 LEXICON EndVerb
 0 # ;
