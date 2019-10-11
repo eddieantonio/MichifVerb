@@ -79,7 +79,7 @@ LEXICON ObviativeMarking
 
 0 VAIInflection ; ! No obviative marking
 @P.obv.yi@:@P.obv.yi@yi%< VAIInflection;
-@P.order.indep@@P.obv.a@:@P.order.indep@@P.obv.a@a%< VAIInflection ;
+@P.order.indep@@P.obv.a@:@P.order.indep@@P.obv.a@a%< Next ;
 
 LEXICON VAIInflection 
 
@@ -115,6 +115,7 @@ LEXICON VAIPersonMarking
 
 LEXICON VAIObviative2
 
+@D.obv@:@D.obv@ Next ;
 @R.order.indep@@R.obv.a@[OBV]:@R.order.indep@@R.obv.a@ Next ;
 
 LEXICON Next
