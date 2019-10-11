@@ -13,6 +13,7 @@ Multichar_Symbols
 
 [1SG]
 [2SG]
+[3SG]
 [3SGA]
 [NON3SG]
 [1PL]
@@ -53,6 +54,7 @@ LEXICON Root
 
 LEXICON Verb
 
+@P.order.indep@   TenseMarking ;
 @P.order.indep@@P.person.ni@:@P.order.indep@@P.person.ni@ni%< TenseMarking ;
 @P.order.indep@@P.person.ki@:@P.order.indep@@P.person.ki@ki%< TenseMarking ;
 
