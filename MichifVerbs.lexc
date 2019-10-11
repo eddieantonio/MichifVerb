@@ -38,6 +38,7 @@ Multichar_Symbols
 @R.obv.yi@
 @P.obv.a@
 @R.obv.a@
+@R.obv@
 @D.obv@
 
 !! Groups of Michif verbs
@@ -79,7 +80,7 @@ LEXICON ObviativeMarking
 
 0 VAIInflection ; ! No obviative marking
 @P.obv.yi@:@P.obv.yi@yi%< VAIInflection;
-@P.order.indep@@P.obv.a@:@P.order.indep@@P.obv.a@a%< Next ;
+@P.order.indep@@P.obv.a@:@P.order.indep@@P.obv.a@a%< # ;
 
 LEXICON VAIInflection 
 
@@ -96,8 +97,9 @@ LEXICON Tense
 
 LEXICON VAIObviative1
 
-@D.obv@:@D.obv@ VAIPersonMarking ;
 @R.obv.yi@[OBV]:@R.obv.yi@ VAIPersonMarking ;
+@R.obv@[OBV]:@R.obv@ VAIPersonMarking ;
+@D.obv@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
