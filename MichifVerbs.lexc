@@ -97,7 +97,7 @@ LEXICON Tense
 LEXICON VAIObviative1
 
 @D.obv@:@D.obv@ VAIPersonMarking ;
-@R.obviative.yi@[OBV]:@R.obviative.yi@ VAIPersonMarking ;
+@R.obv.yi@[OBV]:@R.obv.yi@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
