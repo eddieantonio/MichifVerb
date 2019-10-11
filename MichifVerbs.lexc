@@ -19,7 +19,7 @@ Multichar_Symbols
 [3PLA]
 
 !! Flags for Michif verbal morphology
- 
+
 @P.order.indep@
 @R.order.indep@
 @P.order.conj@
@@ -67,7 +67,7 @@ LEXICON TenseMarking
 LEXICON VAIStem
 
 ! ayaw        VAIInflection;
-itohteew:itoht    ObviativeMarking;
+itohteew:itoht    VAIInflection;
 ! shipweeteew VAIInflection;
 ! itweew      VAIInflection;
 ! kiweew      VAIInflection;
@@ -76,30 +76,32 @@ itohteew:itoht    ObviativeMarking;
 ! I	         nititohtaan	ee-itohteeyaan
 ! you (one)	 kititohtaan	ee-itohteeyan
 
-LEXICON ObviativeMarking
+!! Everything that happens DIRECTLY after the stem:
+LEXICON VAIInflection
 
-0 VAIInflection ; ! No obviative marking
-@P.obv.yi@:@P.obv.yi@yi%< VAIInflection;
-@P.order.indep@@P.obv.a@:@P.order.indep@@P.obv.a@a%< # ;
+[VAI]:%> ObviativeMarking ;
 
-LEXICON VAIInflection 
 
-[VAI]:%> VAIOrder ;
+LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
-LEXICON VAIOrder
+0 VAIOrder ; ! No obviative marking
+@P.obv.yi@:@P.obv.yi@yi%< VAIOrder; !! Can happen in independent of conjunct
+@R.order.indep@@P.obv.a@:@R.order.indep@@P.obv.a@a%< VAIOrder ; !! Can happen only in independent.
+
+LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ Tense ;
 @R.order.conj@[CONJ]:@R.order.conj@ Tense ;
 
-LEXICON Tense
+
+LEXICON Tense   !! Outputs the tense tag
 @D.tense@[PRS]:@D.tense@ VAIObviative1 ;
 @R.tense.kii@[PST]:@R.tense.kii@ VAIObviative1 ;
 @R.tense.ka@[FUT]:@R.tense.ka@ VAIObviative1 ;
 
-LEXICON VAIObviative1
+LEXICON VAIObviative1  !! Outputs the [OBV] tag
 
-@R.obv.yi@[OBV]:@R.obv.yi@ VAIPersonMarking ;
+@D.obv@ VAIPersonMarking ;  !! No obviative
 @R.obv@[OBV]:@R.obv@ VAIPersonMarking ;
-@D.obv@ VAIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
@@ -117,9 +119,8 @@ LEXICON VAIPersonMarking
 
 LEXICON VAIObviative2
 
-@D.obv@:@D.obv@ Next ;
-@R.order.indep@@R.obv.a@[OBV]:@R.order.indep@@R.obv.a@ Next ;
+!! I literally have no idea what's supposed to happen here.
+0 EndVerb ;
 
-LEXICON Next
-
+LEXICON EndVerb
 0 # ;
