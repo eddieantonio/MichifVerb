@@ -69,12 +69,12 @@ LEXICON TenseMarking
 
 LEXICON VAIStem
 
-! ayaw        VAIInflection;
-itohteew:itoht    VAIInflection;
-! shipweeteew VAIInflection;
-! itweew      VAIInflection;
-! kiweew      VAIInflection;
-! meekiw      VAIInflection;
+!ayaw:aya        VAIInflection;
+!itohteew:itohtee    VAIInflection;
+!shipweeteew:shipweetee VAIInflection;
+!itweew:itwee      VAIInflection;
+!kiweew:kiwee      VAIInflection;
+!meekiw:meeki     VAIInflection;
 
 ! I	         nititohtaan	ee-itohteeyaan
 ! you (one)	 kititohtaan	ee-itohteeyan
