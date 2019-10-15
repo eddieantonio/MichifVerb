@@ -1,5 +1,11 @@
 # MichifVerb
 
+# Requirements
+
+ - Foma
+ - GNU make
+ - Python 3.7+
+
 # Credits
 
 FST developed by [Fineen Davis](mailto:Fineen.Davis@nrc-cnrc.gc.ca).
