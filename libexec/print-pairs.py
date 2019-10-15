@@ -25,7 +25,7 @@ with tempfile.TemporaryFile('w+b') as input_file:
     input_file.seek(0)
     lookups: bytes = subprocess.check_output(['flookup', '-i', fomabin], stdin=input_file)
 
-
+# Let's organize the output:
 analysis2wordforms = defaultdict(set)
 for line in lookups.decode('UTF-8').split('\n'):
     if not line.strip():
@@ -34,9 +34,10 @@ for line in lookups.decode('UTF-8').split('\n'):
     analysis, _tab, wordform = line.partition('\t')
     analysis2wordforms[analysis].add(wordform)
 
-# now print it
+# Figure out how wide the first column should be:
 max_analysis_len = len(max(analysis2wordforms.keys(), key=len))
 
+# Now print all nice and pretty, sorted by lemma:
 for analysis in sorted(analysis2wordforms.keys()):
     wordforms = analysis2wordforms[analysis]
     for wordform in sorted(wordforms, key=len):

@@ -4,7 +4,7 @@ MichifVerbs.fomabin:
 	foma -e "read lexc $<" -e "save stack $@" -s
 
 plain-text.txt: MichifVerbs.fomabin
-	foma -q -e "load stack $<" -e "print pairs" -s | tee $@
+	./libexec/print-pairs.py $< | tee $@
 
 test: plain-text.txt
 
