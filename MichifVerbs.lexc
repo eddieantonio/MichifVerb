@@ -69,7 +69,7 @@ LEXICON VerbStem
 LEXICON VAIStem
 
 ayaw:aya        VAIInflection;
-!itohteew:itoht    VAIInflection;
+itohteew:itoht    VAIInflection;
 !shipweeteew:shipweet VAIInflection;
 !itweew:it      VAIInflection;
 !kiweew:kiw      VAIInflection;
@@ -107,8 +107,8 @@ LEXICON VAIOrder !! Outputs the order tag
 @R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
 
 LEXICON VTIOrder !! Outputs the order tag
-@R.order.indep@[IND]:@R.order.indep@ VAITense ;
-@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
+@R.order.indep@[IND]:@R.order.indep@ VTITense ;
+@R.order.conj@[CONJ]:@R.order.conj@ VTITense ;
 
 LEXICON VAITense   !! Outputs the tense tag
 @D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
