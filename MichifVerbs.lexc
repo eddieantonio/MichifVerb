@@ -42,10 +42,6 @@ Multichar_Symbols
 @R.obv@
 @D.obv@
 
-!! Groups of Michif verbs
-
-!! VAI: Animate intransitive
-
 LEXICON Root
 
 0 Verb ;
@@ -68,23 +64,23 @@ LEXICON TenseMarking
 LEXICON VerbStem
 
 0 VAIStem ;
-!0 VTIStem ;
+0 VTIStem ;
 
 LEXICON VAIStem
 
 ayaw:aya        VAIInflection;
-itohteew:itoht    VAIInflection;
-shipweeteew:shipweet VAIInflection;
-itweew:it      VAIInflection;
-kiweew:kiw      VAIInflection;
-meekiw:meeki     VAIInflection;
+!itohteew:itoht    VAIInflection;
+!shipweeteew:shipweet VAIInflection;
+!itweew:it      VAIInflection;
+!kiweew:kiw      VAIInflection;
+!meekiw:meeki     VAIInflection;
 
 ! I	         nititohtaan	ee-itohteeyaan
 ! you (one)	 kititohtaan	ee-itohteeyan
 
-!LEXICON VTIStem
+LEXICON VTIStem
 
-!daweeyihtam:daweeyiht VTIInflection ;
+daweeyihtam:daweeyiht VTIInflection ;
 !tootam:toot VTIInflection ;
 !miyeutam:miyeut VTIInflection ;
 !meekiw VTIInflection ;
@@ -97,9 +93,9 @@ LEXICON VAIInflection
 
 [VAI]:%> ObviativeMarking ;
 
-!LEXICON VTIInflection 
+LEXICON VTIInflection 
 
-![VTI]:%> VTIOrder ;
+[VTI]:%> VTIOrder ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
@@ -110,19 +106,19 @@ LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VAITense ;
 @R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
 
-!LEXICON VTIOrder !! Outputs the order tag
-!@R.order.indep@[IND]:@R.order.indep@ VAITense ;
-!@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
+LEXICON VTIOrder !! Outputs the order tag
+@R.order.indep@[IND]:@R.order.indep@ VAITense ;
+@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
 
 LEXICON VAITense   !! Outputs the tense tag
 @D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
 @R.tense.kii@[PST]:@R.tense.kii@ VAIPersonMarking ;
 @R.tense.ka@[FUT]:@R.tense.ka@ VAIPersonMarking ;
 
-!LEXICON VTITense   !! Outputs the tense tag
-!@D.tense@[PRS]:@D.tense@ VTIPersonMarking ;
-!@R.tense.kii@[PST]:@R.tense.kii@ VTIPersonMarking ;
-!@R.tense.ka@[FUT]:@R.tense.ka@ VTIPersonMarking ;
+LEXICON VTITense   !! Outputs the tense tag
+@D.tense@[PRS]:@D.tense@ VTIPersonMarking ;
+@R.tense.kii@[PST]:@R.tense.kii@ VTIPersonMarking ;
+@R.tense.ka@[FUT]:@R.tense.ka@ VTIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
@@ -146,12 +142,24 @@ LEXICON VAIPersonMarking
 @R.order.conj@[3PL]:@R.order.conj@eechik VAIObviative1 ;
 @R.order.conj@[3PL]:@R.order.conj@eetik VAIObviative1 ;
 
-!LEXICON VTIPersonMarking 
-@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@en EndVerb ;
-@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@en EndVerb ;
+LEXICON VTIPersonMarking 
+@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@een EndVerb ;
+@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@een EndVerb ;
 @R.order.indep@[3SG]:@R.order.indep@am EndVerb ;
 @R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@@R.person.ki@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[2PL][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
+@R.order.indep@@R.person.ki@[2PL][INCL]:@R.order.indep@@R.person.ki@eenan EndVerb ;
+@R.order.indep@[3PL]:@R.order.indep@amwak EndVerb ;
+
+@R.order.conj@[1SG]:@R.order.conj@aman EndVerb ;
+@R.order.conj@[2SG]:@R.order.conj@amenEndVerb ;
+@R.order.conj@[3SG]:@R.order.conj@ak EndVerb ;
+@R.order.conj@[1PL][EXCL]:@R.order.conj@amaahk EndVerb ;
+@R.order.conj@[1PL][INCL]:@R.order.conj@amahk EndVerb ;
+@R.order.conj@[2PL][EXCL]:@R.order.conj@amehk EndVerb;
+@R.order.conj@[2PL][INCL]:@R.order.conj@eamahk EndVerb ;
+@R.order.conj@[3PL]:@R.order.conj@akik EndVerb ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
