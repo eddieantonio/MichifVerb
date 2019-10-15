@@ -101,7 +101,7 @@ LEXICON VAIInflection
 
 LEXICON VTIInflection 
 
-[VTI]:%> ObviativeMarking ;
+[VTI]:%> VTIOrder ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
@@ -109,6 +109,10 @@ LEXICON ObviativeMarking !! Accepts for the first obviation marking
 @P.obv.yi@:@P.obv.yi@yi%< VAIOrder;
 
 LEXICON VAIOrder !! Outputs the order tag
+@R.order.indep@[IND]:@R.order.indep@ Tense ;
+@R.order.conj@[CONJ]:@R.order.conj@ Tense ;
+
+LEXICON VTIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ Tense ;
 @R.order.conj@[CONJ]:@R.order.conj@ Tense ;
 
