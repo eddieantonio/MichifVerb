@@ -66,6 +66,9 @@ LEXICON TenseMarking
 @P.tense.kii@:@P.tense.kii@kii%< VAIStem ;
 @P.tense.ka@:@P.tense.ka@ka%< VAIStem ;
 
+0 VTIStem ; ! No tense marking
+@P.tense.kii@:@P.tense.kii@kii%< VTIStem ;
+@P.tense.ka@:@P.tense.ka@ka%< VTIStem ;
 
 LEXICON VAIStem
 
@@ -80,10 +83,25 @@ LEXICON VAIStem
 ! you (one)	 kititohtaan	ee-itohteeyan
 
 !! Everything that happens DIRECTLY after the stem:
+
+LEXICON VTIStem
+
+daweeyihtam:daweeyiht VTIInflection ;
+tootam:toot VTIInflection ;
+miyeutam:miyeut VTIInflection ;
+meekiw VTIInflection ;
+kishkeetam:kishkeet VTIInflection ;
+waapahtam:waapaht VTIInflection ;
+
+! Everything that happens DIRECTLY after the stem:
+
 LEXICON VAIInflection
 
 [VAI]:%> ObviativeMarking ;
 
+LEXICON VTIInflection 
+
+[VTI]:%> VTIOrder ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
@@ -91,6 +109,10 @@ LEXICON ObviativeMarking !! Accepts for the first obviation marking
 @P.obv.yi@:@P.obv.yi@yi%< VAIOrder;
 
 LEXICON VAIOrder !! Outputs the order tag
+@R.order.indep@[IND]:@R.order.indep@ Tense ;
+@R.order.conj@[CONJ]:@R.order.conj@ Tense ;
+
+LEXICON VTIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ Tense ;
 @R.order.conj@[CONJ]:@R.order.conj@ Tense ;
 
