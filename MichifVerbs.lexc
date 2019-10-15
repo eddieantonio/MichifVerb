@@ -66,9 +66,9 @@ LEXICON TenseMarking
 @P.tense.kii@:@P.tense.kii@kii%< VAIStem ;
 @P.tense.ka@:@P.tense.ka@ka%< VAIStem ;
 
-0 VTIStem ; ! No tense marking
-@P.tense.kii@:@P.tense.kii@kii%< VTIStem ;
-@P.tense.ka@:@P.tense.ka@ka%< VTIStem ;
+!0 VTIStem ; ! No tense marking
+!@P.tense.kii@:@P.tense.kii@kii%< VTIStem ;
+!@P.tense.ka@:@P.tense.ka@ka%< VTIStem ;
 
 LEXICON VAIStem
 
@@ -84,14 +84,14 @@ LEXICON VAIStem
 
 !! Everything that happens DIRECTLY after the stem:
 
-LEXICON VTIStem
+!LEXICON VTIStem
 
-daweeyihtam:daweeyiht VTIInflection ;
-tootam:toot VTIInflection ;
-miyeutam:miyeut VTIInflection ;
-meekiw VTIInflection ;
-kishkeetam:kishkeet VTIInflection ;
-waapahtam:waapaht VTIInflection ;
+!daweeyihtam:daweeyiht VTIInflection ;
+!tootam:toot VTIInflection ;
+!miyeutam:miyeut VTIInflection ;
+!meekiw VTIInflection ;
+!kishkeetam:kishkeet VTIInflection ;
+!waapahtam:waapaht VTIInflection ;
 
 ! Everything that happens DIRECTLY after the stem:
 
@@ -99,9 +99,9 @@ LEXICON VAIInflection
 
 [VAI]:%> ObviativeMarking ;
 
-LEXICON VTIInflection 
+!LEXICON VTIInflection 
 
-[VTI]:%> VTIOrder ;
+![VTI]:%> VTIOrder ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
@@ -109,18 +109,22 @@ LEXICON ObviativeMarking !! Accepts for the first obviation marking
 @P.obv.yi@:@P.obv.yi@yi%< VAIOrder;
 
 LEXICON VAIOrder !! Outputs the order tag
-@R.order.indep@[IND]:@R.order.indep@ Tense ;
-@R.order.conj@[CONJ]:@R.order.conj@ Tense ;
+@R.order.indep@[IND]:@R.order.indep@ VAITense ;
+@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
 
-LEXICON VTIOrder !! Outputs the order tag
-@R.order.indep@[IND]:@R.order.indep@ Tense ;
-@R.order.conj@[CONJ]:@R.order.conj@ Tense ;
+!LEXICON VTIOrder !! Outputs the order tag
+!@R.order.indep@[IND]:@R.order.indep@ VAITense ;
+!@R.order.conj@[CONJ]:@R.order.conj@ VAITense ;
 
-
-LEXICON Tense   !! Outputs the tense tag
+LEXICON VAITense   !! Outputs the tense tag
 @D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
 @R.tense.kii@[PST]:@R.tense.kii@ VAIPersonMarking ;
 @R.tense.ka@[FUT]:@R.tense.ka@ VAIPersonMarking ;
+
+!LEXICON VTITense   !! Outputs the tense tag
+!@D.tense@[PRS]:@D.tense@ VTIPersonMarking ;
+!@R.tense.kii@[PST]:@R.tense.kii@ VTIPersonMarking ;
+!@R.tense.ka@[FUT]:@R.tense.ka@ VTIPersonMarking ;
 
 LEXICON VAIPersonMarking
 
@@ -135,6 +139,8 @@ LEXICON VAIPersonMarking
 @R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative1 ;
 @R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative1 ;
 @R.order.conj@[3SG]:@R.order.conj@eet VAIObviative1 ;
+
+!LEXICON VTIPersonMarking 
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
