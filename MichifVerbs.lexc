@@ -8,16 +8,15 @@ Multichar_Symbols
 [PRS]
 [FUT]
 [PST]
-[INC]
+[INCL]
 [EXCL]
 
 [1SG]
 [2SG]
 [3SG]
-[3SGA]
 [NON3SG]
 [1PL]
-[3PLA]
+[3PL]
 
 !! Flags for Michif verbal morphology
 
@@ -69,21 +68,19 @@ LEXICON TenseMarking
 LEXICON VerbStem
 
 0 VAIStem ;
-0 VTIStem ;
+!0 VTIStem ;
 
 LEXICON VAIStem
 
 ayaw:aya        VAIInflection;
-itohteew:itohtee    VAIInflection;
-shipweeteew:shipweetee VAIInflection;
-itweew:itwee      VAIInflection;
-kiweew:kiwee      VAIInflection;
+itohteew:itoht    VAIInflection;
+shipweeteew:shipweet VAIInflection;
+itweew:it      VAIInflection;
+kiweew:kiw      VAIInflection;
 meekiw:meeki     VAIInflection;
 
 ! I	         nititohtaan	ee-itohteeyaan
 ! you (one)	 kititohtaan	ee-itohteeyan
-
-!! Everything that happens DIRECTLY after the stem:
 
 !LEXICON VTIStem
 
@@ -131,17 +128,30 @@ LEXICON VAIPersonMarking
 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative1 ;
-@R.order.indep@[3SGA]:@R.order.indep@eew VAIObviative1 ;
+@R.order.indep@[3SG]:@R.order.indep@eew VAIObviative1 ;
 @R.order.indep@[NON3SG]:@R.order.indep@een VAIObviative1 ;
-@R.order.indep@[1PL]:@R.order.indep@eenaan VAIObviative1 ;
-!@R.order.indep@[2PL]:@R.order.indep@ VAIObviative1 ;
-@R.order.indep@[3PLA]:@R.order.indep@eewak VAIObviative1 ;
+@R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@eenaan VAIObviative1 ;
+@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@eenaan VAIObviative1 ;
+@R.order.indep@@R.person.ki@[[2PL][EXCL]:@R.order.indep@@R.person.ki@eenaawaaw VAIObviative1 ;
+@R.order.indep@@R.person.ki@[[2PL][INCL]:@R.order.indep@@R.person.ki@eenaan VAIObviative1 ;
+@R.order.indep@[3PL]:@R.order.indep@eewak VAIObviative1 ;
 
 @R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative1 ;
 @R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative1 ;
 @R.order.conj@[3SG]:@R.order.conj@eet VAIObviative1 ;
+@R.order.conj@[1PL][EXCL]:@R.order.conj@eeyaahk VAIObviative1 ;
+@R.order.conj@[1PL][INCL]:@R.order.conj@eeyahk VAIObviative1 ;
+@R.order.conj@[2PL][EXCL]:@R.order.conj@eeyehk VAIObviative1 ;
+@R.order.conj@[2PL][INCL]:@R.order.conj@eeyahk VAIObviative1 ;
+@R.order.conj@[3PL]:@R.order.conj@eechik VAIObviative1 ;
+@R.order.conj@[3PL]:@R.order.conj@eetik VAIObviative1 ;
 
 !LEXICON VTIPersonMarking 
+@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@en EndVerb ;
+@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@en EndVerb ;
+@R.order.indep@[3SG]:@R.order.indep@am EndVerb ;
+@R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
