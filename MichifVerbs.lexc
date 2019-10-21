@@ -29,6 +29,7 @@ Multichar_Symbols
 @R.person.ni@
 @P.person.ki@
 @R.person.ki@
+@D.person@
 @P.tense.kii@
 @R.tense.kii@
 @P.tense.ka@
@@ -69,7 +70,7 @@ LEXICON VerbStem
 LEXICON VAIStem
 
 ayaw:aya        VAIInflection;
-itohteew:itoht    VAIInflection;
+!itohteew:itoht    VAIInflection;
 !shipweeteew:shipweet VAIInflection;
 !itweew:it      VAIInflection;
 !kiweew:kiw      VAIInflection;
@@ -124,13 +125,13 @@ LEXICON VAIPersonMarking
 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative1 ;
-@R.order.indep@[3SG]:@R.order.indep@eew VAIObviative1 ;
-@R.order.indep@[NON3SG]:@R.order.indep@een VAIObviative1 ;
+@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@eew VAIObviative1 ;
+@R.order.indep@@D.person@[NON3SG]:@R.order.indep@@D.person@een VAIObviative1 ;
 @R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@eenaan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@eenaan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[[2PL][EXCL]:@R.order.indep@@R.person.ki@eenaawaaw VAIObviative1 ;
 @R.order.indep@@R.person.ki@[[2PL][INCL]:@R.order.indep@@R.person.ki@eenaan VAIObviative1 ;
-@R.order.indep@[3PL]:@R.order.indep@eewak VAIObviative1 ;
+@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@eewak VAIObviative1 ;
 
 @R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative1 ;
 @R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative1 ;
@@ -139,21 +140,21 @@ LEXICON VAIPersonMarking
 @R.order.conj@[1PL][INCL]:@R.order.conj@eeyahk VAIObviative1 ;
 @R.order.conj@[2PL][EXCL]:@R.order.conj@eeyehk VAIObviative1 ;
 @R.order.conj@[2PL][INCL]:@R.order.conj@eeyahk VAIObviative1 ;
-@R.order.conj@[3PL]:@R.order.conj@eechik VAIObviative1 ;
-@R.order.conj@[3PL]:@R.order.conj@eetik VAIObviative1 ;
+@R.order.conj@@D.person@[3PL]:@R.order.conj@eechik VAIObviative1 ;
+@R.order.conj@@D.person@[3PL]:@R.order.conj@eetik VAIObviative1 ;
 
 LEXICON VTIPersonMarking 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@een EndVerb ;
 @R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@een EndVerb ;
-@R.order.indep@[3SG]:@R.order.indep@am EndVerb ;
+@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@am EndVerb ;
 @R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
 @R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@@R.person.ki@enaan EndVerb ;
 @R.order.indep@@R.person.ki@[2PL][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
 @R.order.indep@@R.person.ki@[2PL][INCL]:@R.order.indep@@R.person.ki@eenan EndVerb ;
-@R.order.indep@[3PL]:@R.order.indep@amwak EndVerb ;
+@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@amwak EndVerb ;
 
 @R.order.conj@[1SG]:@R.order.conj@aman EndVerb ;
-@R.order.conj@[2SG]:@R.order.conj@amenEndVerb ;
+@R.order.conj@[2SG]:@R.order.conj@amen EndVerb ;
 @R.order.conj@[3SG]:@R.order.conj@ak EndVerb ;
 @R.order.conj@[1PL][EXCL]:@R.order.conj@amaahk EndVerb ;
 @R.order.conj@[1PL][INCL]:@R.order.conj@amahk EndVerb ;
