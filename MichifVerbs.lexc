@@ -18,6 +18,8 @@ Multichar_Symbols
 [1PL]
 [3PL]
 
+[3OBJ]
+
 !! Flags for Michif verbal morphology
 
 @P.order.indep@
@@ -144,23 +146,23 @@ LEXICON VAIPersonMarking
 @R.order.conj@@D.person@[3PL]:@R.order.conj@eetik VAIObviative1 ;
 
 LEXICON VTIPersonMarking 
-@R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@een EndVerb ;
-@R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@een EndVerb ;
-@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@am EndVerb ;
-@R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@@R.person.ki@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[2PL][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
-@R.order.indep@@R.person.ki@[2PL][INCL]:@R.order.indep@@R.person.ki@eenan EndVerb ;
-@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@amwak EndVerb ;
+@R.order.indep@@R.person.ni@[1SG][3OBJ]:@R.order.indep@@R.person.ni@een EndVerb ;
+@R.order.indep@@R.person.ki@[2SG][3OBJ]:@R.order.indep@@R.person.ki@een EndVerb ;
+@R.order.indep@@D.person@[3SG][3OBJ]:@R.order.indep@@D.person@am EndVerb ;
+@R.order.indep@@R.person.ni@[1PL][EXCL][3OBJ]:@R.order.indep@@R.person.ni@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[1PL][INCL][3OBJ]:@R.order.indep@@R.person.ki@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[2PL][EXCL][3OBJ]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
+@R.order.indep@@R.person.ki@[2PL][INCL][3OBJ]:@R.order.indep@@R.person.ki@eenan EndVerb ;
+@R.order.indep@@D.person@[3PL][3OBJ]:@R.order.indep@@D.person@amwak EndVerb ;
 
-@R.order.conj@[1SG]:@R.order.conj@aman EndVerb ;
-@R.order.conj@[2SG]:@R.order.conj@amen EndVerb ;
-@R.order.conj@[3SG]:@R.order.conj@ak EndVerb ;
-@R.order.conj@[1PL][EXCL]:@R.order.conj@amaahk EndVerb ;
-@R.order.conj@[1PL][INCL]:@R.order.conj@amahk EndVerb ;
-@R.order.conj@[2PL][EXCL]:@R.order.conj@amehk EndVerb;
-@R.order.conj@[2PL][INCL]:@R.order.conj@eamahk EndVerb ;
-@R.order.conj@[3PL]:@R.order.conj@akik EndVerb ;
+@R.order.conj@[1SG][3OBJ]:@R.order.conj@aman EndVerb ;
+@R.order.conj@[2SG][3OBJ]:@R.order.conj@amen EndVerb ;
+@R.order.conj@[3SG][3OBJ]:@R.order.conj@ak EndVerb ;
+@R.order.conj@[1PL][EXCL][3OBJ]:@R.order.conj@amaahk EndVerb ;
+@R.order.conj@[1PL][INCL][3OBJ]:@R.order.conj@amahk EndVerb ;
+@R.order.conj@[2PL][EXCL][3OBJ]:@R.order.conj@amehk EndVerb;
+@R.order.conj@[2PL][INCL][3OBJ]:@R.order.conj@eamahk EndVerb ;
+@R.order.conj@[3PL][3OBJ]:@R.order.conj@akik EndVerb ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
