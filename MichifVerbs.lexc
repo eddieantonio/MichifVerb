@@ -60,9 +60,15 @@ LEXICON Verb
 
 LEXICON TenseMarking
 
-0 VerbStem ; ! No tense marking
-@P.tense.kii@:@P.tense.kii@kii%< VerbStem ;
-@P.tense.ka@:@P.tense.ka@ka%< VerbStem ;
+0 Preverb ; ! No tense marking
+@P.tense.kii@:@P.tense.kii@kii%< Preverb ; 
+@P.tense.ka@:@P.tense.ka@ka%< Preverb ;
+
+LEXICON Preverb
+
+0 VerbStem ; ! No preverb
+nohtee%< VerbStem ; ! ('want')
+machii%< VerbStem ; ! ('begin')
 
 LEXICON VerbStem
 
@@ -71,26 +77,21 @@ LEXICON VerbStem
 
 LEXICON VAIStem
 
-ayaw:aya        VAIInflection;
-!itohteew:itoht    VAIInflection;
-!shipweeteew:shipweet VAIInflection;
-!itweew:it      VAIInflection;
-!kiweew:kiw      VAIInflection;
-!meekiw:meeki     VAIInflection;
-
-! I	         nititohtaan	ee-itohteeyaan
-! you (one)	 kititohtaan	ee-itohteeyan
+ayaaw:ayaa        VAIInflection; ! ('be there', 'live there', stay there')
+!itohteew:itoht    VAIInflection; ('go', 'go there')
+!shipweeteew:shipweet VAIInflection; !('leave', 'depart')
+!itweew:it      VAIInflection; !('say')
+!kiweew:kiw      VAIInflection; !('return home')
+!meekiw:meeki     VAIInflection; !('give')
 
 LEXICON VTIStem
 
-daweeyihtam:daweeyiht VTIInflection ;
-!tootam:toot VTIInflection ;
-!miyeutam:miyeut VTIInflection ;
-!meekiw VTIInflection ;
-!kishkeetam:kishkeet VTIInflection ;
-!waapahtam:waapaht VTIInflection ;
-
-! Everything that happens DIRECTLY after the stem:
+daweeyihtam:daweeyiht VTIInflection ; !('want', 'desire')
+!tootam:toot VTIInflection ; ! ('do')
+!miyeutam:miyeut VTIInflection ; ! ('like', 'be glad about', 'think well of')
+!meekiw VTIInflection ; ! ('give')
+!kishkeetam:kishkeet VTIInflection ; ! ('know')
+!waapahtam:waapaht VTIInflection ; !('see')
 
 LEXICON VAIInflection
 
