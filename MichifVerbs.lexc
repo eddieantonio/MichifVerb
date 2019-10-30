@@ -74,24 +74,35 @@ LEXICON VerbStem
 
 0 VAIStem ;
 0 VTIStem ;
+0 VTAStem ;
 
 LEXICON VAIStem
 
-ayaaw:ayaa        VAIInflection; ! ('be there', 'live there', stay there')
-!itohteew:itoht    VAIInflection; ('go', 'go there')
-!shipweeteew:shipweet VAIInflection; !('leave', 'depart')
-!itweew:it      VAIInflection; !('say')
-!kiweew:kiw      VAIInflection; !('return home')
-!meekiw:meeki     VAIInflection; !('give')
+ayaw:aya        VAIInflection; ! ('be there', 'live there', stay there')
+itohteew:itoht    VAIInflection; ! ('go', 'go there')
+shipweeteew:shipweet VAIInflection; !('leave', 'depart')
+itweew:it      VAIInflection; !('say')
+kiweew:kiw      VAIInflection; !('return home')
+meekiw:meeki     VAIInflection; !('give')
 
 LEXICON VTIStem
 
 daweeyihtam:daweeyiht VTIInflection ; !('want', 'desire')
-!tootam:toot VTIInflection ; ! ('do')
-!miyeutam:miyeut VTIInflection ; ! ('like', 'be glad about', 'think well of')
-!meekiw VTIInflection ; ! ('give')
-!kishkeetam:kishkeet VTIInflection ; ! ('know')
-!waapahtam:waapaht VTIInflection ; !('see')
+tootam:toot VTIInflection ; ! ('do')
+miyeutam:miyeut VTIInflection ; ! ('like', 'be glad about', 'think well of')
+meekiw VTIInflection ; ! ('give')
+kishkeetam:kishkeet VTIInflection ; ! ('know')
+waapahtam:waapaht VTIInflection ; !('see')
+
+LEXICON VTAStem
+
+ayaaweew VTAInflection ; ! ('own')
+itweew VTAInflection ; !('say this to')
+waapameew VTAInflection ; !('see', 'witness')
+miyew VTAInflection ; ! ('give')
+miyeumew VTAInflection ; ! 'like', 'think well of', 'be pleased with'
+daweeyimew VTAInflection ; ! 'want', 'desire', 'desire from'
+kishkeemew VTAInflection ; ! 'know', 'know about'
 
 LEXICON VAIInflection
 
