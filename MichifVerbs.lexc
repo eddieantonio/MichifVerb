@@ -112,6 +112,10 @@ LEXICON VTIInflection
 
 [VTI]:%> VTIOrder ;
 
+LEXICON VTAInflection
+
+[VTA]]:%> VTAOrder ;
+
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
 0 VAIOrder ; ! No obviative marking
@@ -124,6 +128,11 @@ LEXICON VAIOrder !! Outputs the order tag
 LEXICON VTIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VTITense ;
 @R.order.conj@[CONJ]:@R.order.conj@ VTITense ;
+
+LEXICON VTAOrder
+
+@R.order.indep@[IND]:@R.order.indep@ VTATense ;
+@R.order.conj@[CONJ]:@R.order.conj@ VTATense ;
 
 LEXICON VAITense   !! Outputs the tense tag
 @D.tense@[PRS]:@D.tense@ VAIPersonMarking ;
