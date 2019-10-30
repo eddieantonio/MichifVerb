@@ -144,6 +144,12 @@ LEXICON VTITense   !! Outputs the tense tag
 @R.tense.kii@[PST]:@R.tense.kii@ VTIPersonMarking ;
 @R.tense.ka@[FUT]:@R.tense.ka@ VTIPersonMarking ;
 
+LEXICON VTATense
+
+@D.tense@[PRS]:@D.tense@ VTAPersonMarking ;
+@R.tense.kii@[PST]:@R.tense.kii@ VTAPersonMarking ;
+@R.tense.ka@[FUT]:@R.tense.ka@ VTAPersonMarking ;
+
 LEXICON VAIPersonMarking
 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative1 ;
