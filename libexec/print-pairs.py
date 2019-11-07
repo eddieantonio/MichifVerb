@@ -6,6 +6,7 @@ Pretty prints ALL pairs from Foma
 """
 
 import io
+import re
 import subprocess
 import sys
 import tempfile
@@ -37,8 +38,27 @@ for line in lookups.decode('UTF-8').split('\n'):
 # Figure out how wide the first column should be:
 max_analysis_len = len(max(analysis2wordforms.keys(), key=len))
 
+
+
+def sort_by_pos(analysis):
+    """
+    Order analyses by part of speech.
+    """
+    match = re.search(r'\[(VII|VTI|VAI|VTA)\]', analysis)
+    pos = match.group(1)
+
+    # Use this to reorder the parts of speech:
+    pos2rank = {
+            'VII': 0,
+            'VAI': 1,
+            'VTI': 2,
+            'VTA': 3,
+    }
+    return pos2rank[pos], analysis
+    
+
 # Now print all nice and pretty, sorted by lemma:
-for analysis in sorted(analysis2wordforms.keys()):
+for analysis in sorted(analysis2wordforms.keys(), key=sort_by_pos):
     wordforms = analysis2wordforms[analysis]
     for wordform in sorted(wordforms, key=len):
         print(f"{{0:<{max_analysis_len}s}}\t{{1}}".format(analysis, wordform))
