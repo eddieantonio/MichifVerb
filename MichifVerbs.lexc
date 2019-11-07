@@ -18,7 +18,8 @@ Multichar_Symbols
 [1PL]
 [3PL]
 
-[3OBJ]
+[3-OBJ]
+[3SG-OBJ]
 
 !! Flags for Michif verbal morphology
 
@@ -130,8 +131,8 @@ LEXICON ObviativeMarking !! Accepts for the first obviation marking
 LEXICON DirectionMarking
 
 @P.direction.dir@:@P.direction.dir@aa%< VTAOrder ;
-@P.direction.inv@:@P.direction.inv@ikwc ;
-@P.direction.dirobv@:@P.direction.dirobv@eev ;
+@P.direction.inv@:@P.direction.inv@ikwc VTAOrder ;
+@P.direction.dirobv@:@P.direction.dirobv@eev VTAOrder ;
 
 LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VAITense ;
@@ -158,9 +159,9 @@ LEXICON VTITense   !! Outputs the tense tag
 
 LEXICON VTATense
 
-@D.tense@[PRS]:@D.tense@ VTADirectionMarking ;
-@R.tense.kii@[PST]:@R.tense.kii@ VTADirectionMarking ;
-@R.tense.ka@[FUT]:@R.tense.ka@ VTADirectionMarking ;
+@D.tense@[PRS]:@D.tense@ VTAPersonMarking ;
+@R.tense.kii@[PST]:@R.tense.kii@ VTAPersonMarking ;
+@R.tense.ka@[FUT]:@R.tense.ka@ VTAPersonMarking;
 
 LEXICON VAIPersonMarking
 
@@ -185,25 +186,29 @@ LEXICON VAIPersonMarking
 @R.order.conj@@D.person@[3PL]:@R.order.conj@eetik VAIObviative1 ;
 
 LEXICON VTIPersonMarking 
-@R.order.indep@@R.person.ni@[1SG][3OBJ]:@R.order.indep@@R.person.ni@een EndVerb ;
-@R.order.indep@@R.person.ki@[2SG][3OBJ]:@R.order.indep@@R.person.ki@een EndVerb ;
-@R.order.indep@@D.person@[3SG][3OBJ]:@R.order.indep@@D.person@am EndVerb ;
-@R.order.indep@@R.person.ni@[1PL][EXCL][3OBJ]:@R.order.indep@@R.person.ni@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[1PL][INCL][3OBJ]:@R.order.indep@@R.person.ki@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[2PL][EXCL][3OBJ]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
-@R.order.indep@@R.person.ki@[2PL][INCL][3OBJ]:@R.order.indep@@R.person.ki@eenan EndVerb ;
-@R.order.indep@@D.person@[3PL][3OBJ]:@R.order.indep@@D.person@amwak EndVerb ;
+@R.order.indep@@R.person.ni@[1SG][3-OBJ]:@R.order.indep@@R.person.ni@een EndVerb ;
+@R.order.indep@@R.person.ki@[2SG][3-OBJ]:@R.order.indep@@R.person.ki@een EndVerb ;
+@R.order.indep@@D.person@[3SG][3-OBJ]:@R.order.indep@@D.person@am EndVerb ;
+@R.order.indep@@R.person.ni@[1PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[1PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@enaan EndVerb ;
+@R.order.indep@@R.person.ki@[2PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
+@R.order.indep@@R.person.ki@[2PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@eenan EndVerb ;
+@R.order.indep@@D.person@[3PL][3-OBJ]:@R.order.indep@@D.person@amwak EndVerb ;
 
-@R.order.conj@[1SG][3OBJ]:@R.order.conj@aman EndVerb ;
-@R.order.conj@[2SG][3OBJ]:@R.order.conj@amen EndVerb ;
-@R.order.conj@[3SG][3OBJ]:@R.order.conj@ak EndVerb ;
-@R.order.conj@[1PL][EXCL][3OBJ]:@R.order.conj@amaahk EndVerb ;
-@R.order.conj@[1PL][INCL][3OBJ]:@R.order.conj@amahk EndVerb ;
-@R.order.conj@[2PL][EXCL][3OBJ]:@R.order.conj@amehk EndVerb;
-@R.order.conj@[2PL][INCL][3OBJ]:@R.order.conj@eamahk EndVerb ;
-@R.order.conj@[3PL][3OBJ]:@R.order.conj@akik EndVerb ;
+@R.order.conj@[1SG][3-OBJ]:@R.order.conj@aman EndVerb ;
+@R.order.conj@[2SG][3-OBJ]:@R.order.conj@amen EndVerb ;
+@R.order.conj@[3SG][3-OBJ]:@R.order.conj@ak EndVerb ;
+@R.order.conj@[1PL][3-OBJ][EXCL][:@R.order.conj@amaahk EndVerb ;
+@R.order.conj@[1PL][3-OBJ][INCL]:@R.order.conj@amahk EndVerb ;
+@R.order.conj@[2PL][3-OBJ][EXCL]:@R.order.conj@amehk EndVerb;
+@R.order.conj@[2PL][3-OBJ][INCL]:@R.order.conj@eamahk EndVerb ;
+@R.order.conj@[3PL][3-OBJ]:@R.order.conj@akik EndVerb ;
 
-LEXICON VTADirectionMarking
+LEXICON VTAPersonMarking
+
+@R.order.indep@@R.person.ni@@R.direction.dir@[1SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.dir@w EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.dir@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.dir@nan EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.dir@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.dir@nan EndVerb ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
