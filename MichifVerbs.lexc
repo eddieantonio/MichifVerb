@@ -20,6 +20,7 @@ Multichar_Symbols
 
 [3-OBJ]
 [3SG-OBJ]
+[3PL-OBJ]
 
 !! Flags for Michif verbal morphology
 
@@ -45,12 +46,14 @@ Multichar_Symbols
 @R.obv.a@
 @R.obv@
 @D.obv@
-@P.direction.dir@
-@R.direction.dir@
-@P.direction.inv@
-@R.direction.inv@
-@P.direction.dirobv@
-@R.direction.dirobv@
+@P.direction.aa@
+@R.direction.aa@
+@P.direction.ikw@
+@R.direction.ikw@
+@P.direction.ee@
+@R.direction.ee@
+@P.direction.i@
+@R.direction.i@
 
 LEXICON Root
 
@@ -85,31 +88,31 @@ LEXICON VerbStem
 
 LEXICON VAIStem
 
-ayaw:ay        VAIInflection; ! 'be there', 'live there', stay there'
+!ayaw:ay        VAIInflection; ! 'be there', 'live there', stay there'
 itohteew:itoht    VAIInflection; ! 'go', 'go there'
-shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
-itweew:it VAIInflection; ! 'say'
-kiweew:kiw      VAIInflection; ! 'return home'
-meekiw:meekiw     VAIInflection; ! 'give'
+!shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
+!itweew:it VAIInflection; ! 'say'
+!kiweew:kiw      VAIInflection; ! 'return home'
+!meekiw:meekiw     VAIInflection; ! 'give'
 
 LEXICON VTIStem
 
 daweeyihtam:daweeyiht VTIInflection ; ! 'want', 'desire'
-tootam:toot VTIInflection ; ! 'do'
-miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
-meekiw VTIInflection ; ! 'give'
-kishkeetam:kishkeet VTIInflection ; ! 'know'
-waapahtam:waapaht VTIInflection ; ! 'see'
+!tootam:toot VTIInflection ; ! 'do'
+!miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
+!meekiw VTIInflection ; ! 'give'
+!kishkeetam:kishkeet VTIInflection ; ! 'know'
+!waapahtam:waapaht VTIInflection ; ! 'see'
 
 LEXICON VTAStem
 
-ayaaweew:ay VTAInflection ; ! 'own'
-itweew:itw VTAInflection ; ! 'say this to'
+!ayaaweew:ay VTAInflection ; ! 'own'
+!itweew:itw VTAInflection ; ! 'say this to'
 waapameew:waapam VTAInflection ; ! 'see', 'witness'
-miyew:miy VTAInflection ; ! 'give'
-miyeumew:miyeum VTAInflection ; ! 'like', 'think well of', 'be pleased with'
-daweeyimew:daweeyim VTAInflection ; ! 'want', 'desire', 'desire from'
-kishkeemew:kishkeem VTAInflection ; ! 'know', 'know about'
+!miyew:miy VTAInflection ; ! 'give'
+!miyeumew:miyeum VTAInflection ; ! 'like', 'think well of', 'be pleased with'
+!daweeyimew:daweeyim VTAInflection ; ! 'want', 'desire', 'desire from'
+!kishkeemew:kishkeem VTAInflection ; ! 'know', 'know about'
 
 LEXICON VAIInflection
 
@@ -121,7 +124,7 @@ LEXICON VTIInflection
 
 LEXICON VTAInflection
 
-[VTA]]:%> DirectionMarking ;
+[VTA]:%> DirectionMarking ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
@@ -130,9 +133,10 @@ LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
 LEXICON DirectionMarking
 
-@P.direction.dir@:@P.direction.dir@aa%< VTAOrder ;
-@P.direction.inv@:@P.direction.inv@ikwc VTAOrder ;
-@P.direction.dirobv@:@P.direction.dirobv@eev VTAOrder ;
+@P.direction.aa@:@P.direction.aa@aa%< VTAOrder ;
+@P.direction.ikw@:@P.direction.ikw@ikw VTAOrder ;
+@P.direction.ee@:@P.direction.ee@ee VTAOrder ;
+@P.direction.i@:@P.direction.i@i%< VTAOrder ;
 
 LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VAITense ;
@@ -206,9 +210,27 @@ LEXICON VTIPersonMarking
 
 LEXICON VTAPersonMarking
 
-@R.order.indep@@R.person.ni@@R.direction.dir@[1SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.dir@w EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.dir@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.dir@nan EndVerb ;
-@R.order.indep@@R.person.ni@@R.direction.dir@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.dir@nan EndVerb ;
+!! First Person Subject Independent Order Direct
+@R.order.indep@@R.person.ni@@R.direction.aa@[1SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.aa@w EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.aa@[1SG][DIR][3PL-OBJ]:@R.order.indep@@R.person.ni@@R.direction.aa@waak EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@nan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@naanik EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naan EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naanik EndVerb ;
+
+!! Second Person Subject Independent Order Direct
+@R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@n EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@naan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[2SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@w EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[2SG][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waak EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[2PL][DIR][1-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@nawaaw
+@R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waawaak EndVerb ;
+
+
+!! Third Person Subject Independent Order Direct
+@R.order.indep@@D.person@@R.direction.ee@[3SG][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@w VTAObviative ;
+@R.order.indep@@D.person@@R.direction.ee@[3PL][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@waak VTAObviative ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
@@ -217,6 +239,10 @@ LEXICON VAIObviative1
 LEXICON VAIObviative2 !! Here, the word is DEFINITELY obviative!
 @D.order.indep@:@D.order.indep@     EndVerb ;
 @R.order.indep@:@R.order.indep@%<a  EndVerb ;
+
+LEXICON VTAObviative
+
+@R.obv@[OBV]:@R.obv@ EndVerb ;
 
 LEXICON EndVerb
 0 # ;
