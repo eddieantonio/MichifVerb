@@ -198,7 +198,7 @@ LEXICON VTIPersonMarking
 @R.order.indep@@D.person@[3SG][3-OBJ]:@R.order.indep@@D.person@am EndVerb ;
 @R.order.indep@@R.person.ni@[1PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
 @R.order.indep@@R.person.ki@[1PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[2PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
+@R.order.indep@@R.person.ni@[2PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
 @R.order.indep@@R.person.ki@[2PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@eenan EndVerb ;
 @R.order.indep@@D.person@[3PL][3-OBJ]:@R.order.indep@@D.person@amwak EndVerb ;
 
@@ -216,10 +216,10 @@ LEXICON VTAPersonMarking
 !! First Person Subject Independent Order Direct
 @R.order.indep@@R.person.ni@@R.direction.aa@[1SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.aa@w EndVerb ;
 @R.order.indep@@R.person.ni@@R.direction.aa@[1SG][DIR][3PL-OBJ]:@R.order.indep@@R.person.ni@@R.direction.aa@waak EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@nan EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@naanik EndVerb ;
-@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naan EndVerb ;
-@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naanik EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@nan EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@naanik EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naanik EndVerb ;
 
 !! Second Person Subject Independent Order Direct
 @R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@n EndVerb ;
