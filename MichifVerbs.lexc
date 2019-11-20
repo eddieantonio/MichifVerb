@@ -91,31 +91,31 @@ LEXICON VerbStem
 
 LEXICON VAIStem
 
-!ayaw:ay        VAIInflection; ! 'be there', 'live there', stay there'
+ayaw:ay        VAIInflection; ! 'be there', 'live there', stay there'
 itohteew:itoht    VAIInflection; ! 'go', 'go there'
-!shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
-!itweew:it VAIInflection; ! 'say'
-!kiweew:kiw      VAIInflection; ! 'return home'
-!meekiw:meekiw     VAIInflection; ! 'give'
+shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
+itweew:it VAIInflection; ! 'say'
+kiweew:kiw      VAIInflection; ! 'return home'
+meekiw:meekiw     VAIInflection; ! 'give'
 
 LEXICON VTIStem
 
 daweeyihtam:daweeyiht VTIInflection ; ! 'want', 'desire'
-!tootam:toot VTIInflection ; ! 'do'
-!miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
-!meekiw VTIInflection ; ! 'give'
-!kishkeetam:kishkeet VTIInflection ; ! 'know'
-!waapahtam:waapaht VTIInflection ; ! 'see'
+tootam:toot VTIInflection ; ! 'do'
+miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
+meekiw VTIInflection ; ! 'give'
+kishkeetam:kishkeet VTIInflection ; ! 'know'
+waapahtam:waapaht VTIInflection ; ! 'see'
 
 LEXICON VTAStem
 
-!ayaaweew:ay VTAInflection ; ! 'own'
-!itweew:itw VTAInflection ; ! 'say this to'
+ayaaweew:ay VTAInflection ; ! 'own'
+itweew:itw VTAInflection ; ! 'say this to'
 waapameew:waapam VTAInflection ; ! 'see', 'witness'
-!miyew:miy VTAInflection ; ! 'give'
-!miyeumew:miyeum VTAInflection ; ! 'like', 'think well of', 'be pleased with'
-!daweeyimew:daweeyim VTAInflection ; ! 'want', 'desire', 'desire from'
-!kishkeemew:kishkeem VTAInflection ; ! 'know', 'know about'
+miyew:miy VTAInflection ; ! 'give'
+miyeumew:miyeum VTAInflection ; ! 'like', 'think well of', 'be pleased with'
+daweeyimew:daweeyim VTAInflection ; ! 'want', 'desire', 'desire from'
+kishkeemew:kishkeem VTAInflection ; ! 'know', 'know about'
 
 LEXICON VAIInflection
 
@@ -221,19 +221,43 @@ LEXICON VTAPersonMarking
 @R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naanik EndVerb ;
 
+!! First Person Subject Conjunct Order Direct
+
+@R.order.conj@@R.person.ni@@R.direction.aa@[1SG][DIR][3SG-OBJ]:@R.order.conj@@R.person.ni@@R.direction.aa@k EndVerb ;
+@R.order.conj@@R.person.ni@@R.direction.aa@[1SG][DIR][3PL-OBJ]:@R.order.conj@@R.person.ni@@R.direction.aa@kik EndVerb ;
+@R.order.conj@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.aa@yaahk EndVerb ;
+@R.order.conj@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.aa@yaahkwik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yahkwik EndVerb ;
+
 !! Second Person Subject Independent Order Direct
 @R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@n EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@naan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@w EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2SG][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waak EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.i@[2PL][DIR][1-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@nawaaw
+@R.order.indep@@R.person.ki@@R.direction.i@[2PL][DIR][1-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@nawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waawaak EndVerb ;
+
+!! Second Person Subject Conjunct Order Direct
+
+@R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][1SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@n EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][1PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@yaahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][3SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@t EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][3PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@tik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[2PL][DIR][3SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@yehk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@yehkwik EndVerb ;
 
 
 !! Third Person Subject Independent Order Direct
 @R.order.indep@@D.person@@R.direction.ee@[3SG][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@w VTAObviative ;
 @R.order.indep@@D.person@@R.direction.ee@[3PL][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@waak VTAObviative ;
+
+!! Third Person Subject Independent Order Inverse
+@R.order.indep@@D.person@@R.direction.i@[3SG][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@k VTAObviative ;
+@R.order.indep@@D.person@@R.direction.i@[3PL][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@wak VTAObviative ;
+
+!! Third Person Subject Indep
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
