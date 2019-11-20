@@ -3,6 +3,11 @@ Multichar_Symbols
 !! Below are the multichar symbols relevant to Michif verbal morphology
 
 [VAI]
+[VTI]
+[VTA]
+
+[DIR]
+[INV]
 
 [OBV]
 [PRS]
@@ -17,6 +22,7 @@ Multichar_Symbols
 [NON3SG]
 [1PL]
 [3PL]
+[3-SUBJ]
 
 [3-OBJ]
 [3SG-OBJ]
@@ -254,10 +260,12 @@ LEXICON VTAPersonMarking
 @R.order.indep@@D.person@@R.direction.ee@[3PL][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@waak VTAObviative ;
 
 !! Third Person Subject Independent Order Inverse
-@R.order.indep@@D.person@@R.direction.i@[3SG][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@k VTAObviative ;
-@R.order.indep@@D.person@@R.direction.i@[3PL][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@wak VTAObviative ;
+@R.order.indep@@D.person@@R.direction.i@[3SG][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@k VTAObviative ;
+@R.order.indep@@D.person@@R.direction.i@[3PL][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@wak VTAObviative ;
 
-!! Third Person Subject Indep
+!! Third Person Subject Conjunct Order Direct
+@R.order.conj@@D.person@@R.direction.aa@[3-SUBJ][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@t EndVerb ;
+@R.order.conj@@D.person@@R.direction.aa@[3-SUBJ][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@tik EndVerb ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
