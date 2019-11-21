@@ -51,7 +51,6 @@ Multichar_Symbols
 @R.tense.kii@
 @P.tense.ka@
 @R.tense.ka@
-@P.tense.ka@
 @D.tense@
 @P.obv.yi@
 @R.obv.yi@
@@ -69,6 +68,7 @@ Multichar_Symbols
 @R.direction.i@
 @P.direction.it@
 @R.direction.it@
+@R.direction.iti@
 
 LEXICON Root
 
