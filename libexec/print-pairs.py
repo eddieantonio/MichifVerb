@@ -18,44 +18,50 @@ MAX_WORDS = 10_000
 
 fomabin = sys.argv[1]
 
-words: bytes = subprocess.check_output(['foma', '-q', '-e', f'load stack {fomabin}', '-e', f'print upper-words {MAX_WORDS}', '-s'])
-with tempfile.TemporaryFile('w+b') as input_file:
+words: bytes = subprocess.check_output(
+    [
+        "foma",
+        "-q",
+        "-e",
+        f"load stack {fomabin}",
+        "-e",
+        f"print upper-words {MAX_WORDS}",
+        "-s",
+    ]
+)
+with tempfile.TemporaryFile("w+b") as input_file:
     input_file.write(words)
     input_file.flush()
     # Go back to the start, so that Foma can start reading from the beginning:
     input_file.seek(0)
-    lookups: bytes = subprocess.check_output(['flookup', '-i', fomabin], stdin=input_file)
+    lookups: bytes = subprocess.check_output(
+        ["flookup", "-i", fomabin], stdin=input_file
+    )
 
 # Let's organize the output:
 analysis2wordforms = defaultdict(set)
-for line in lookups.decode('UTF-8').split('\n'):
+for line in lookups.decode("UTF-8").split("\n"):
     if not line.strip():
         continue
 
-    analysis, _tab, wordform = line.partition('\t')
+    analysis, _tab, wordform = line.partition("\t")
     analysis2wordforms[analysis].add(wordform)
 
 # Figure out how wide the first column should be:
 max_analysis_len = len(max(analysis2wordforms.keys(), key=len))
 
 
-
 def sort_by_pos(analysis):
     """
     Order analyses by part of speech.
     """
-    match = re.search(r'\[(VII|VTI|VAI|VTA)\]', analysis)
+    match = re.search(r"\[(VII|VTI|VAI|VTA)\]", analysis)
     pos = match.group(1)
 
     # Use this to reorder the parts of speech:
-    pos2rank = {
-            'VII': 0,
-            'VAI': 1,
-            'VTI': 2,
-            'VTA': 3,
-    }
+    pos2rank = {"VII": 0, "VAI": 1, "VTI": 2, "VTA": 3}
     return pos2rank[pos], analysis
-    
+
 
 # Now print all nice and pretty, sorted by lemma:
 for analysis in sorted(analysis2wordforms.keys(), key=sort_by_pos):

@@ -12,7 +12,7 @@ import sys
 import fileinput
 
 # What does a flag look like?
-flag_pattern = re.compile(r'@\w[.]\w+(?:[.]\w+)@')
+flag_pattern = re.compile(r"@\w[.]\w+(?:[.]\w+)@")
 
 
 defined_flags = set()
@@ -32,10 +32,11 @@ def check_if_defined(flag):
     undefined_flags.add(flag)
 
 
-def emit(message, level='error'):
+def emit(message, level="error"):
     lineno = fileinput.filelineno()
     filename = fileinput.filename()
     print(f"{filename}:{lineno}: {red(level)}: {message}", file=sys.stderr)
+
 
 def green(s):
     return f"\033[32m{s}\033[m"
@@ -52,7 +53,7 @@ def bold(s):
 on_flag = collect_vocab
 
 for line in fileinput.input():
-    if line.lstrip().startswith('LEXICON'):
+    if line.lstrip().startswith("LEXICON"):
         on_flag = check_if_defined
 
     matches = flag_pattern.findall(line)
