@@ -16,6 +16,7 @@ Multichar_Symbols
 [INCL]
 [EXCL]
 
+[1] !! DELETE ME?
 [1SG]
 [2SG]
 [3SG]
@@ -24,12 +25,12 @@ Multichar_Symbols
 [3PL]
 [3-SUBJ]
 
-[3-OBJ]
-[3SG-OBJ]
-[3PL-OBJ]
 [1-OBJ]
 [1SG-OBJ]
 [1PL-OBJ]
+[3-OBJ]
+[3SG-OBJ]
+[3PL-OBJ]
 
 !! Flags for Michif verbal morphology
 
@@ -187,8 +188,8 @@ LEXICON VAIPersonMarking
 @R.order.indep@@D.person@[NON3SG]:@R.order.indep@@D.person@een VAIObviative1 ;
 @R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@eenaan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@eenaan VAIObviative1 ;
-@R.order.indep@@R.person.ki@[[2PL][EXCL]:@R.order.indep@@R.person.ki@eenaawaaw VAIObviative1 ;
-@R.order.indep@@R.person.ki@[[2PL][INCL]:@R.order.indep@@R.person.ki@eenaan VAIObviative1 ;
+@R.order.indep@@R.person.ki@[2PL][EXCL]:@R.order.indep@@R.person.ki@eenaawaaw VAIObviative1 ;
+@R.order.indep@@R.person.ki@[2PL][INCL]:@R.order.indep@@R.person.ki@eenaan VAIObviative1 ;
 @R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@eewak VAIObviative1 ;
 
 @R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative1 ;
@@ -214,7 +215,7 @@ LEXICON VTIPersonMarking
 @R.order.conj@[1SG][3-OBJ]:@R.order.conj@aman EndVerb ;
 @R.order.conj@[2SG][3-OBJ]:@R.order.conj@amen EndVerb ;
 @R.order.conj@[3SG][3-OBJ]:@R.order.conj@ak EndVerb ;
-@R.order.conj@[1PL][3-OBJ][EXCL][:@R.order.conj@amaahk EndVerb ;
+@R.order.conj@[1PL][3-OBJ][EXCL]:@R.order.conj@amaahk EndVerb ;
 @R.order.conj@[1PL][3-OBJ][INCL]:@R.order.conj@amahk EndVerb ;
 @R.order.conj@[2PL][3-OBJ][EXCL]:@R.order.conj@amehk EndVerb;
 @R.order.conj@[2PL][3-OBJ][INCL]:@R.order.conj@eamahk EndVerb ;
@@ -268,7 +269,8 @@ LEXICON VTAPersonMarking
 @R.order.indep@@R.person.ki@@R.direction.iti@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@in EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.iti@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@inaan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@w EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ:@R.order.indep@@R.person.ki@@R.direction.ikw@iwaak EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@iwaak EndVerb ;
+!! TODO: What's [1]? Is it supposed to be [1PL]?
 @R.order.indep@@R.person.ki@@R.direction.iti@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@inawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waawaak EndVerb ;
@@ -286,7 +288,7 @@ LEXICON VTAPersonMarking
 
 !! Conjunt Order inverse
 @R.order.conj@@R.person.ki@@R.direction.it@[1SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aan EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.it@[1PL][INV[2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.it@[1PL][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aahk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.i@[3SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@shk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.i@[3PL][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@shkik EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.ikw@ehk EndVerb ;
