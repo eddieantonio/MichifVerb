@@ -243,37 +243,56 @@ LEXICON VTAPersonMarking
 @R.order.conj@@R.person.ni@@R.direction.aa@[1SG][DIR][3PL-OBJ]:@R.order.conj@@R.person.ni@@R.direction.aa@kik EndVerb ;
 @R.order.conj@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.aa@yaahk EndVerb ;
 @R.order.conj@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.aa@yaahkwik EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yahk EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yahkwik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yaahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yaahkwik EndVerb ;
 
-!! First Person Subject Conjunct Order Inverse
+!! Conjunct Order Inverse
+@R.order.conj@@R.person.ni@@R.direction.i@[3SG][INV][1SG-OBJ]:@R.order.conj@@R.person.ni@@R.direction.i@t EndVerb ;
+@R.order.conj@@R.person.ni@@R.direction.i@[3PL][INV][1SG-OBJ]:@R.order.conj@@R.person.ni@@R.direction.i@tik EndVerb ;
+@R.order.conj@@R.person.ni@@R.direction.ikw@[3SG][INV][1PL-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.ikw@aahk EndVerb ;
+@R.order.conj@@R.person.ni@@R.direction.ikw@[3PL][INV][1PL-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.ikw@aahkwik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.ikw@[3SG][INV][1PL-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.ikw@aahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.ikw@[3PL][INV][1PL-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.ikw@aahkwik EndVerb ;
+
 
 !! Second Person Subject Independent Order Direct
 @R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@n EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@naan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@w EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2SG][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waak EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.i@[2PL][DIR][1-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@nawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[2PL][DIR][1-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@naawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waawaak EndVerb ;
 
 !! Independent Order Inverse
-@R.order.indep@@R.person.ki@@R.direction.iti@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.iti@n EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.iti@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.iti@naan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.iti@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@in EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.iti@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@inaan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@w EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ:@R.order.indep@@R.person.ki@@R.direction.ikw@waak EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.iti@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.iti@nawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ:@R.order.indep@@R.person.ki@@R.direction.ikw@iwaak EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.iti@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@inawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waawaak EndVerb ;
 
 !! Second Person Subject Conjunct Order Direct
 
-@R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][1SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@n EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][1PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@yaahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[2SG][DIR][1SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@yen EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[2SG][DIR][1PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@yaahk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][3SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@t EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.aa@[2SG][DIR][3PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@tik EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.aa@[2PL][DIR][3SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@yehk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.aa@yehkwik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[2PL][DIR][1SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@yehk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[2PL][DIR][1PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@yaahk EndVerb ;
+
+!! Conjunt Order inverse
+@R.order.conj@@R.person.ki@@R.direction.it@[1SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aan EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.it@[1PL][INV[2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[3SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@shk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[3PL][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@shkik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.ikw@ehk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.ikw@ehkwik EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.it@[1SG][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@ehk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.it@[1PL][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aahk EndVerb ;
 
 
 !! Third Person Subject Independent Order Direct
@@ -282,7 +301,7 @@ LEXICON VTAPersonMarking
 
 !! Independent Order Inverse
 @R.order.indep@@D.person@@R.direction.i@[3SG][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@k VTAObviative ;
-@R.order.indep@@D.person@@R.direction.i@[3PL][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@wak VTAObviative ;
+@R.order.indep@@D.person@@R.direction.i@[3PL][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@waak VTAObviative ;
 
 !! Third Person Subject Conjunct Order Direct
 @R.order.conj@@D.person@@R.direction.aa@[3-SUBJ][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@t EndVerb ;
