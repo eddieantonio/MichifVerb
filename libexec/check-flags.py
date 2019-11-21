@@ -32,11 +32,13 @@ def check_if_defined(flag):
     undefined_flags.add(flag)
 
 
-
 def emit(message, level='error'):
     lineno = fileinput.filelineno()
     filename = fileinput.filename()
     print(f"{filename}:{lineno}: {red(level)}: {message}", file=sys.stderr)
+
+def green(s):
+    return f"\033[32m{s}\033[m"
 
 
 def red(s):
@@ -60,3 +62,5 @@ for line in fileinput.input():
 # Exit with error if there are undefined flags:
 if undefined_flags:
     sys.exit(1)
+else:
+    print(green("Flag diacritics look ok!"), file=sys.stderr)
