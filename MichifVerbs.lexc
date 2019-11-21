@@ -63,6 +63,8 @@ Multichar_Symbols
 @R.direction.ee@
 @P.direction.i@
 @R.direction.i@
+@P.direction.it@
+@R.direction.it@
 
 LEXICON Root
 
@@ -97,31 +99,31 @@ LEXICON VerbStem
 
 LEXICON VAIStem
 
-ayaw:ay        VAIInflection; ! 'be there', 'live there', stay there'
+!ayaw:ay        VAIInflection; ! 'be there', 'live there', stay there'
 itohteew:itoht    VAIInflection; ! 'go', 'go there'
-shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
-itweew:it VAIInflection; ! 'say'
-kiweew:kiw      VAIInflection; ! 'return home'
-meekiw:meekiw     VAIInflection; ! 'give'
+!shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
+!itweew:it VAIInflection; ! 'say'
+!kiweew:kiw      VAIInflection; ! 'return home'
+!meekiw:meekiw     VAIInflection; ! 'give'
 
 LEXICON VTIStem
 
 daweeyihtam:daweeyiht VTIInflection ; ! 'want', 'desire'
-tootam:toot VTIInflection ; ! 'do'
-miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
-meekiw VTIInflection ; ! 'give'
-kishkeetam:kishkeet VTIInflection ; ! 'know'
-waapahtam:waapaht VTIInflection ; ! 'see'
+!tootam:toot VTIInflection ; ! 'do'
+!miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
+!meekiw VTIInflection ; ! 'give'
+!kishkeetam:kishkeet VTIInflection ; ! 'know'
+!waapahtam:waapaht VTIInflection ; ! 'see'
 
 LEXICON VTAStem
 
-ayaaweew:ay VTAInflection ; ! 'own'
-itweew:itw VTAInflection ; ! 'say this to'
+!ayaaweew:ay VTAInflection ; ! 'own'
+!itweew:itw VTAInflection ; ! 'say this to'
 waapameew:waapam VTAInflection ; ! 'see', 'witness'
-miyew:miy VTAInflection ; ! 'give'
-miyeumew:miyeum VTAInflection ; ! 'like', 'think well of', 'be pleased with'
-daweeyimew:daweeyim VTAInflection ; ! 'want', 'desire', 'desire from'
-kishkeemew:kishkeem VTAInflection ; ! 'know', 'know about'
+!miyew:miy VTAInflection ; ! 'give'
+!miyeumew:miyeum VTAInflection ; ! 'like', 'think well of', 'be pleased with'
+!daweeyimew:daweeyim VTAInflection ; ! 'want', 'desire', 'desire from'
+!kishkeemew:kishkeem VTAInflection ; ! 'know', 'know about'
 
 LEXICON VAIInflection
 
@@ -138,14 +140,15 @@ LEXICON VTAInflection
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
 0 VAIOrder ; ! No obviative marking
-@P.obv.yi@:@P.obv.yi@yi%< VAIOrder;
+@P.obv.yi@:@P.obv.yi@yi%> VAIOrder;
 
 LEXICON DirectionMarking
 
-@P.direction.aa@:@P.direction.aa@aa%< VTAOrder ;
-@P.direction.ikw@:@P.direction.ikw@ikw VTAOrder ;
-@P.direction.ee@:@P.direction.ee@ee VTAOrder ;
-@P.direction.i@:@P.direction.i@i%< VTAOrder ;
+@P.direction.aa@:@P.direction.aa@aa%> VTAOrder ;
+@P.direction.ikw@:@P.direction.ikw@ikw%> VTAOrder ;
+@P.direction.ee@:@P.direction.ee@ee%> VTAOrder ;
+@P.direction.i@:@P.direction.i@i%> VTAOrder ;
+@P.direction.it@:@P.direction.it@it%> VTAOrder ;
 
 LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VAITense ;
@@ -227,14 +230,23 @@ LEXICON VTAPersonMarking
 @R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naanik EndVerb ;
 
-!! First Person Subject Conjunct Order Direct
+!! Independent Order Inverse
+@R.order.indep@@R.person.ni@@R.direction.ikw@[3SG][INV][1SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.ikw@ EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.ikw@[3PL][INV][1SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.ikw@aak EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.ikw@[3SG][INV][1PL-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.ikw@naan EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.ikw@[3PL][INV][1PL-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.ikw@naanik EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][1PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.ikw@naan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][1PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.ikw@naanik EndVerb ;
 
+!! First Person Subject Conjunct Order Direct
 @R.order.conj@@R.person.ni@@R.direction.aa@[1SG][DIR][3SG-OBJ]:@R.order.conj@@R.person.ni@@R.direction.aa@k EndVerb ;
 @R.order.conj@@R.person.ni@@R.direction.aa@[1SG][DIR][3PL-OBJ]:@R.order.conj@@R.person.ni@@R.direction.aa@kik EndVerb ;
 @R.order.conj@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.aa@yaahk EndVerb ;
 @R.order.conj@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.conj@@R.person.ni@@R.direction.aa@yaahkwik EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yahk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.conj@@R.person.ki@@R.direction.aa@yahkwik EndVerb ;
+
+!! First Person Subject Conjunct Order Inverse
 
 !! Second Person Subject Independent Order Direct
 @R.order.indep@@R.person.ki@@R.direction.i@[2SG][DIR][1SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@n EndVerb ;
@@ -244,6 +256,15 @@ LEXICON VTAPersonMarking
 @R.order.indep@@R.person.ki@@R.direction.i@[2PL][DIR][1-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@nawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waawaak EndVerb ;
+
+!! Independent Order Inverse
+@R.order.indep@@R.person.ki@@R.direction.iti@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.iti@n EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.iti@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.iti@naan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@w EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ:@R.order.indep@@R.person.ki@@R.direction.ikw@waak EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.iti@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.iti@nawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waawaak EndVerb ;
 
 !! Second Person Subject Conjunct Order Direct
 
@@ -259,7 +280,7 @@ LEXICON VTAPersonMarking
 @R.order.indep@@D.person@@R.direction.ee@[3SG][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@w VTAObviative ;
 @R.order.indep@@D.person@@R.direction.ee@[3PL][DIR][3-OBJ]:@R.order.indep@@D.person@@R.direction.ee@waak VTAObviative ;
 
-!! Third Person Subject Independent Order Inverse
+!! Independent Order Inverse
 @R.order.indep@@D.person@@R.direction.i@[3SG][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@k VTAObviative ;
 @R.order.indep@@D.person@@R.direction.i@[3PL][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@wak VTAObviative ;
 
