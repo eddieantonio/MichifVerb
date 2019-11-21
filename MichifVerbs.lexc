@@ -28,7 +28,6 @@ Multichar_Symbols
 [EXCL]
 
 !! Subject marking !!
-[1] !! DELETE ME?
 [1SG]
 [2SG]
 [3SG]
@@ -119,20 +118,20 @@ itohteew:itoht    VAIInflection; ! 'go', 'go there'
 !shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
 !itweew:it VAIInflection; ! 'say'
 !kiweew:kiw      VAIInflection; ! 'return home'
-!meekiw:meekiw     VAIInflection; ! 'give'
+meekiw:meekiw     VAIInflection; ! 'give'
 
 LEXICON VTIStem
 
 daweeyihtam:daweeyiht VTIInflection ; ! 'want', 'desire'
 !tootam:toot VTIInflection ; ! 'do'
 !miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
-!meekiw VTIInflection ; ! 'give'
+meekiw VTIInflection ; ! 'give'
 !kishkeetam:kishkeet VTIInflection ; ! 'know'
 !waapahtam:waapaht VTIInflection ; ! 'see'
 
 LEXICON VTAStem
 
-!ayaaweew:ay VTAInflection ; ! 'own'
+ayaaweew:ay VTAInflection ; ! 'own'
 !itweew:itw VTAInflection ; ! 'say this to'
 waapameew:waapam VTAInflection ; ! 'see', 'witness'
 !miyew:miy VTAInflection ; ! 'give'
@@ -172,7 +171,7 @@ LEXICON VTIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VTITense ;
 @R.order.conj@[CONJ]:@R.order.conj@ VTITense ;
 
-LEXICON VTAOrder
+LEXICON VTAOrder !! Outputs the order tag
 
 @R.order.indep@[IND]:@R.order.indep@ VTATense ;
 @R.order.conj@[CONJ]:@R.order.conj@ VTATense ;
@@ -187,7 +186,7 @@ LEXICON VTITense   !! Outputs the tense tag
 @R.tense.kii@[PST]:@R.tense.kii@ VTIPersonMarking ;
 @R.tense.ka@[FUT]:@R.tense.ka@ VTIPersonMarking ;
 
-LEXICON VTATense
+LEXICON VTATense !! Outputs the tense tag
 
 @D.tense@[PRS]:@D.tense@ VTAPersonMarking ;
 @R.tense.kii@[PST]:@R.tense.kii@ VTAPersonMarking ;
@@ -281,12 +280,12 @@ LEXICON VTAPersonMarking
 !! Independent Order Inverse
 @R.order.indep@@R.person.ki@@R.direction.i@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tin EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.i@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinaan EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@w EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@aak EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@iwaak EndVerb ;
-!! TODO: What's [1]? Is it supposed to be [1PL]?
-@R.order.indep@@R.person.ki@@R.direction.i@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinawaaw EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waaw EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waawaak EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@aaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@aawaak EndVerb ;
 
 !! Second Person Subject Conjunct Order Direct
 
