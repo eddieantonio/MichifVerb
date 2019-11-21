@@ -79,9 +79,7 @@ Multichar_Symbols
 @R.direction.ee@
 @P.direction.i@
 @R.direction.i@
-@P.direction.it@
-@R.direction.it@
-@R.direction.iti@
+
 
 LEXICON Root
 
@@ -165,7 +163,6 @@ LEXICON DirectionMarking
 @P.direction.ikw@:@P.direction.ikw@ikw%> VTAOrder ;
 @P.direction.ee@:@P.direction.ee@ee%> VTAOrder ;
 @P.direction.i@:@P.direction.i@i%> VTAOrder ;
-@P.direction.it@:@P.direction.it@it%> VTAOrder ;
 
 LEXICON VAIOrder !! Outputs the order tag
 @R.order.indep@[IND]:@R.order.indep@ VAITense ;
@@ -282,12 +279,12 @@ LEXICON VTAPersonMarking
 @R.order.indep@@R.person.ki@@R.direction.aa@[2PL][DIR][3PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.aa@waawaak EndVerb ;
 
 !! Independent Order Inverse
-@R.order.indep@@R.person.ki@@R.direction.iti@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@in EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.iti@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@inaan EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tin EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinaan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@w EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@iwaak EndVerb ;
 !! TODO: What's [1]? Is it supposed to be [1PL]?
-@R.order.indep@@R.person.ki@@R.direction.iti@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.it@inawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@waawaak EndVerb ;
 
@@ -303,14 +300,14 @@ LEXICON VTAPersonMarking
 @R.order.conj@@R.person.ki@@R.direction.i@[2PL][DIR][1PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@yaahk EndVerb ;
 
 !! Conjunt Order inverse
-@R.order.conj@@R.person.ki@@R.direction.it@[1SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aan EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.it@[1PL][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[1SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@taan EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[1PL][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@taahk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.i@[3SG][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@shk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.i@[3PL][INV][2SG-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@shkik EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.ikw@ehk EndVerb ;
 @R.order.conj@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.ikw@ehkwik EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.it@[1SG][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@ehk EndVerb ;
-@R.order.conj@@R.person.ki@@R.direction.it@[1PL][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.it@aahk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[1SG][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@tehk EndVerb ;
+@R.order.conj@@R.person.ki@@R.direction.i@[1PL][INV][2PL-OBJ]:@R.order.conj@@R.person.ki@@R.direction.i@taahk EndVerb ;
 
 
 !! Third Person Subject Independent Order Direct
