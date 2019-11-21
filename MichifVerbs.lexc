@@ -2,23 +2,32 @@ Multichar_Symbols
 
 !! Below are the multichar symbols relevant to Michif verbal morphology
 
+!! Lexical Category !!
 [VAI]
 [VTI]
 [VTA]
 
+!! TODO: Direction???? !!
 [DIR]
 [INV]
 
+!! Verb Order !!
 [IND]
 [CONJ]
 
+!! Obviative !!
 [OBV]
+
+!! Tense !!
 [PRS]
 [FUT]
 [PST]
+
+!! First-person Inclusive/Exclusive !!
 [INCL]
 [EXCL]
 
+!! Subject marking !!
 [1] !! DELETE ME?
 [1SG]
 [2SG]
@@ -29,6 +38,7 @@ Multichar_Symbols
 [3PL]
 [3-SUBJ]
 
+!! Object marking !!
 [1-OBJ]
 [1SG-OBJ]
 [1PL-OBJ]
