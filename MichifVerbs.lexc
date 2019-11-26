@@ -103,7 +103,7 @@ LEXICON Preverb
 
 0 VerbStem ; ! No preverb
 nohtee%< VerbStem ; ! ('want')
-machii%< VerbStem ; ! ('begin')
+maachi%< VerbStem ; ! ('begin')
 
 LEXICON VerbStem
 
@@ -117,21 +117,21 @@ LEXICON VAIStem
 itohteew:itoht    VAIInflection; ! 'go', 'go there'
 !shipweeteew:shipweet VAIInflection; ! 'leave', 'depart'
 !itweew:it VAIInflection; ! 'say'
-!kiweew:kiw      VAIInflection; ! 'return home'
-meekiw:meekiw     VAIInflection; ! 'give'
+!kiweew:ki      VAIInflection; ! 'return home'
+meekiw:meeki     VAIInflection; ! 'give'
 
 LEXICON VTIStem
 
 daweeyihtam:daweeyiht VTIInflection ; ! 'want', 'desire'
 !tootam:toot VTIInflection ; ! 'do'
 !miyeutam:miyeut VTIInflection ; ! 'like', 'be glad about', 'think well of'
-meekiw VTIInflection ; ! 'give'
+meekiw:meeki VTIInflection ; ! 'give'
 !kishkeetam:kishkeet VTIInflection ; ! 'know'
 !waapahtam:waapaht VTIInflection ; ! 'see'
 
 LEXICON VTAStem
 
-ayaaweew:ay VTAInflection ; ! 'own'
+ayaaweew:ayaaw VTAInflection ; ! 'own'
 !itweew:itw VTAInflection ; ! 'say this to'
 waapameew:waapam VTAInflection ; ! 'see', 'witness'
 !miyew:miy VTAInflection ; ! 'give'
@@ -141,7 +141,7 @@ waapameew:waapam VTAInflection ; ! 'see', 'witness'
 
 LEXICON VAIInflection
 
-[VAI]:%> ObviativeMarking ;
+[VAI]:%> VAIConjunct ;
 
 LEXICON VTIInflection 
 
@@ -150,6 +150,11 @@ LEXICON VTIInflection
 LEXICON VTAInflection
 
 [VTA]:%> DirectionMarking ;
+
+LEXICON VAIConjunct
+
+@R.order.indep@:@R.order.indep@ ObviativeMarking ;
+@R.order.conj@:@R.order.conj@ee ObviativeMarking ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
@@ -196,49 +201,44 @@ LEXICON VAIPersonMarking
 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative1 ;
-@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@eew VAIObviative1 ;
-@R.order.indep@@D.person@[NON3SG]:@R.order.indep@@D.person@een VAIObviative1 ;
-@R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@eenaan VAIObviative1 ;
-@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@eenaan VAIObviative1 ;
-@R.order.indep@@R.person.ki@[2PL][EXCL]:@R.order.indep@@R.person.ki@eenaawaaw VAIObviative1 ;
-@R.order.indep@@R.person.ki@[2PL][INCL]:@R.order.indep@@R.person.ki@eenaan VAIObviative1 ;
-@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@eewak VAIObviative1 ;
+@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@aaw VAIObviative1 ;
+@R.order.indep@@D.person@[NON3SG]:@R.order.indep@@D.person@aan VAIObviative1 ;
+@R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@aanaan VAIObviative1 ;
+@R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@aanaan VAIObviative1 ;
+@R.order.indep@@R.person.ki@[2PL]:@R.order.indep@@R.person.ki@aanaawaaw VAIObviative1 ;
+@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@aawak VAIObviative1 ;
 
-@R.order.conj@[1SG]:@R.order.conj@eeyaan VAIObviative1 ;
-@R.order.conj@[2SG]:@R.order.conj@eeyan VAIObviative1 ;
-@R.order.conj@[3SG]:@R.order.conj@eet VAIObviative1 ;
-@R.order.conj@[1PL][EXCL]:@R.order.conj@eeyaahk VAIObviative1 ;
-@R.order.conj@[1PL][INCL]:@R.order.conj@eeyahk VAIObviative1 ;
-@R.order.conj@[2PL][EXCL]:@R.order.conj@eeyehk VAIObviative1 ;
-@R.order.conj@[2PL][INCL]:@R.order.conj@eeyahk VAIObviative1 ;
-@R.order.conj@@D.person@[3PL]:@R.order.conj@eechik VAIObviative1 ;
-@R.order.conj@@D.person@[3PL]:@R.order.conj@eetik VAIObviative1 ;
+@R.order.conj@[1SG]:@R.order.conj@yaan VAIObviative1 ;
+@R.order.conj@[2SG]:@R.order.conj@yan VAIObviative1 ;
+@R.order.conj@[3SG]:@R.order.conj@t VAIObviative1 ;
+@R.order.conj@[1PL][EXCL]:@R.order.conj@yaahk VAIObviative1 ;
+@R.order.conj@[1PL][INCL]:@R.order.conj@yahk VAIObviative1 ;
+@R.order.conj@[2PL]:@R.order.conj@yehk VAIObviative1 ;
+@R.order.conj@@D.person@[3PL]:@R.order.conj@chik VAIObviative1 ;
 
 LEXICON VTIPersonMarking 
 @R.order.indep@@R.person.ni@[1SG][3-OBJ]:@R.order.indep@@R.person.ni@een EndVerb ;
 @R.order.indep@@R.person.ki@[2SG][3-OBJ]:@R.order.indep@@R.person.ki@een EndVerb ;
 @R.order.indep@@D.person@[3SG][3-OBJ]:@R.order.indep@@D.person@am EndVerb ;
-@R.order.indep@@R.person.ni@[1PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ni@enaan EndVerb ;
-@R.order.indep@@R.person.ki@[1PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@enaan EndVerb ;
-@R.order.indep@@R.person.ni@[2PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
-@R.order.indep@@R.person.ki@[2PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@eenan EndVerb ;
+@R.order.indep@@R.person.ni@[1PL][3-OBJ][EXCL]:@R.order.indep@@R.person.ni@eenaan EndVerb ;
+@R.order.indep@@R.person.ki@[1PL][3-OBJ][INCL]:@R.order.indep@@R.person.ki@eenaan EndVerb ;
+@R.order.indep@@R.person.ni@[2PL][3-OBJ]:@R.order.indep@@R.person.ki@eenawaw EndVerb ;
 @R.order.indep@@D.person@[3PL][3-OBJ]:@R.order.indep@@D.person@amwak EndVerb ;
 
-@R.order.conj@[1SG][3-OBJ]:@R.order.conj@aman EndVerb ;
-@R.order.conj@[2SG][3-OBJ]:@R.order.conj@amen EndVerb ;
-@R.order.conj@[3SG][3-OBJ]:@R.order.conj@ak EndVerb ;
+@R.order.conj@[1SG][3-OBJ]:@R.order.conj@amaan EndVerb ;
+@R.order.conj@[2SG][3-OBJ]:@R.order.conj@aman EndVerb ;
+@R.order.conj@[3SG][3-OBJ]:@R.order.conj@ahk EndVerb ;
 @R.order.conj@[1PL][3-OBJ][EXCL]:@R.order.conj@amaahk EndVerb ;
 @R.order.conj@[1PL][3-OBJ][INCL]:@R.order.conj@amahk EndVerb ;
-@R.order.conj@[2PL][3-OBJ][EXCL]:@R.order.conj@amehk EndVerb;
-@R.order.conj@[2PL][3-OBJ][INCL]:@R.order.conj@eamahk EndVerb ;
-@R.order.conj@[3PL][3-OBJ]:@R.order.conj@akik EndVerb ;
+@R.order.conj@[2PL][3-OBJ]:@R.order.conj@ameehk EndVerb;
+@R.order.conj@[3PL][3-OBJ]:@R.order.conj@ahkik EndVerb ;
 
 LEXICON VTAPersonMarking
 
 !! First Person Subject Independent Order Direct
 @R.order.indep@@R.person.ni@@R.direction.aa@[1SG][DIR][3SG-OBJ]:@R.order.indep@@R.person.ni@@R.direction.aa@w EndVerb ;
 @R.order.indep@@R.person.ni@@R.direction.aa@[1SG][DIR][3PL-OBJ]:@R.order.indep@@R.person.ni@@R.direction.aa@waak EndVerb ;
-@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@nan EndVerb ;
+@R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3SG-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@naan EndVerb ;
 @R.order.indep@@R.person.ni@@R.direction.aa@[1PL][DIR][3PL-OBJ][EXCL]:@R.order.indep@@R.person.ki@@R.direction.aa@naanik EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3SG-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.aa@[1PL][DIR][3PL-OBJ][INCL]:@R.order.indep@@R.person.ni@@R.direction.aa@naanik EndVerb ;
@@ -282,8 +282,8 @@ LEXICON VTAPersonMarking
 @R.order.indep@@R.person.ki@@R.direction.i@[1PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinaan EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@aak EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2SG-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@iwaak EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.i@[1SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinawaaw EndVerb ;
-@R.order.indep@@R.person.ki@@R.direction.i@[1PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinaawaaw EndVerb ;
+@R.order.indep@@R.person.ki@@R.direction.i@[1PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.i@tinaawaaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3SG][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@aaw EndVerb ;
 @R.order.indep@@R.person.ki@@R.direction.ikw@[3PL][INV][2PL-OBJ]:@R.order.indep@@R.person.ki@@R.direction.ikw@aawaak EndVerb ;
 
@@ -318,8 +318,8 @@ LEXICON VTAPersonMarking
 @R.order.indep@@D.person@@R.direction.i@[3PL][INV][3-OBJ]:@R.order.indep@@D.person@@R.direction.i@waak VTAObviative ;
 
 !! Third Person Subject Conjunct Order Direct
-@R.order.conj@@D.person@@R.direction.aa@[3-SUBJ][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@t EndVerb ;
-@R.order.conj@@D.person@@R.direction.aa@[3-SUBJ][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@tik EndVerb ;
+@R.order.conj@@D.person@@R.direction.aa@[3SG][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@t EndVerb ;
+@R.order.conj@@D.person@@R.direction.aa@[3PL][DIR][3-OBJ]:@R.order.conj@@D.person@@R.direction.aa@chik EndVerb ;
 
 LEXICON VAIObviative1
 @D.obv@                EndVerb ; !! Not obviative, don't care
