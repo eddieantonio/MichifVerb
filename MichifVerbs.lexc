@@ -201,12 +201,12 @@ LEXICON VAIPersonMarking
 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan VAIObviative1 ;
-@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@aaw VAIObviative1 ;
+@R.order.indep@@R.person.obv@[3SG]:@R.order.indep@@R.person.obv@aaw VAIObviative1 ;
 @R.order.indep@@D.person@[NON3SG]:@R.order.indep@@D.person@aan VAIObviative1 ;
 @R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@aanaan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@aanaan VAIObviative1 ;
 @R.order.indep@@R.person.ki@[2PL]:@R.order.indep@@R.person.ki@aanaawaaw VAIObviative1 ;
-@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@aawak VAIObviative1 ;
+@R.order.indep@@R.person.obv@[3PL]:@R.order.indep@@R.person.obv@aawak VAIObviative1 ;
 
 @R.order.conj@[1SG]:@R.order.conj@yaan VAIObviative1 ;
 @R.order.conj@[2SG]:@R.order.conj@yan VAIObviative1 ;
