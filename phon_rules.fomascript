@@ -1,0 +1,13 @@
+define Voiced g | d | b | z | ;
+
+define TInsertion [..] -> t || n i | k i "<" _ Vowel ;  
+
+define NiDeletion k -> g || n i "<" _ 
+                  t -> d || n i "<" _
+                  p -> b || n i "<" _
+                  s -> z || n i "<" _
+                  n i -> [..] || _ "<" Voiced ;
+
+
+define KiDeletion k i -> [..] || _ "<" k ;                
+define WDeletion w -> [..] || _ WD ;
