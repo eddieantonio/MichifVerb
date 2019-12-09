@@ -219,14 +219,12 @@ LEXICON VAIPersonMarking
 @R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@aawak EndVerb;
 @R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@aawak VAIObviative1 ;
 
-@R.order.conj@[1SG]:@R.order.conj@yaan EndVerb ;
-@R.order.conj@[2SG]:@R.order.conj@yan EndVerb ;
-@R.order.conj@[3SG]:@R.order.conj@t EndVerb ;
+@R.order.conj@[1SG]:@R.order.conj@yaan VAIObviative1 ;
+@R.order.conj@[2SG]:@R.order.conj@yan VAIObviative1 ;
 @R.order.conj@[3SG]:@R.order.conj@t VAIObviative1 ;
-@R.order.conj@[1PL][EXCL]:@R.order.conj@yaahk EndVerb;
-@R.order.conj@[1PL][INCL]:@R.order.conj@yahk EndVerb;
-@R.order.conj@[2PL]:@R.order.conj@yehk EndVerb ;
-@R.order.conj@@D.person@[3PL]:@R.order.conj@chik EndVerb ;
+@R.order.conj@[1PL][EXCL]:@R.order.conj@yaahk VAIObviative1 ;
+@R.order.conj@[1PL][INCL]:@R.order.conj@yahk VAIObviative1 ;
+@R.order.conj@[2PL]:@R.order.conj@yehk VAIObviative1 ;
 @R.order.conj@@D.person@[3PL]:@R.order.conj@chik VAIObviative1 ;
 
 LEXICON VTIPersonMarking 
