@@ -1,4 +1,5 @@
 define Voiced g | d | b | z | ;
+define Vowel a | e | i | o | u ;
 
 define TInsertion [..] -> t || n i | k i "<" _ Vowel ;  
 
