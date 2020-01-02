@@ -1,0 +1,23 @@
+define Voiced g | d | b | z | ;
+define Vowel a | e | i | o | u ;
+
+
+
+define TInsertion [..] -> t || n i | k i "<" _ Vowel ;  
+
+define KVoicing k -> g || n i "<" _ Vowel ;
+define TVoicing t -> d || n i "<" _ Vowel ;
+define BVoicing p -> b || n i "<" _ Vowel ;
+define SVoicing s -> z || n i "<" _ Vowel ;
+
+define NiDeletion n i -> [..] || _ "<" Voiced Vowel ;
+define KiDeletion k i -> [..] || _ "<" k ;                
+define WDeletion w -> [..] || _ ">" ;
+
+define eeiVowelMerge i -> [..] || e e ">" | e e "<" _ ;
+define eeeeVowelMerge e e -> [..] || e e _ ;
+define eeeVowelMerge e -> [..] || e e _ ;
+define oiMerge i -> [..] || o ">" | o "<" _ ;
+define oeeMerge o -> [..] || _ ">" e e | "<" e e ;
+define oaaMerge o -> [..] || _ ">" a a | ">" a a ;
+define aoMerge o -> [..] || a "<" | a ">" _ ;

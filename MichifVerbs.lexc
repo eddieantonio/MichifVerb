@@ -163,12 +163,12 @@ LEXICON VTAInflection
 LEXICON VAIConjunct
 
 @R.order.indep@:@R.order.indep@ ObviativeMarking ;
-@R.order.conj@:@R.order.conj@ee%> ObviativeMarking ;
+@R.order.conj@:@R.order.conj@ee%> VAIOrder ;
 
 LEXICON ObviativeMarking !! Accepts for the first obviation marking
 
 0 VAIOrder ; ! No obviative marking
-@P.obv.yi@:@P.obv.yi@yi%> VAIOrder;
+@P.obv.yi@@D.person@:@P.obv.yi@@D.person@yi%> VAIOrder;
 
 LEXICON DirectionMarking
 
@@ -210,13 +210,11 @@ LEXICON VAIPersonMarking
 
 @R.order.indep@@R.person.ni@[1SG]:@R.order.indep@@R.person.ni@aan EndVerb ;
 @R.order.indep@@R.person.ki@[2SG]:@R.order.indep@@R.person.ki@aan EndVerb ;
-@R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@aw EndVerb ;
 @R.order.indep@@D.person@[3SG]:@R.order.indep@@D.person@aaw VAIObviative1 ;
-@R.order.indep@@D.person@[NON3SG]:@R.order.indep@@D.person@aan EndVerb ;
+@R.order.indep@@D.person@@D.obv@[NON3SG]:@R.order.indep@@D.person@@D.obv@aan EndVerb ;
 @R.order.indep@@R.person.ni@[1PL][EXCL]:@R.order.indep@aanaan EndVerb ;
 @R.order.indep@@R.person.ki@[1PL][INCL]:@R.order.indep@aanaan EndVerb ;
 @R.order.indep@@R.person.ki@[2PL]:@R.order.indep@@R.person.ki@aanaawaaw EndVerb ;
-@R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@aawak EndVerb;
 @R.order.indep@@D.person@[3PL]:@R.order.indep@@D.person@aawak VAIObviative1 ;
 
 @R.order.conj@[1SG]:@R.order.conj@yaan VAIObviative1 ;
@@ -225,7 +223,7 @@ LEXICON VAIPersonMarking
 @R.order.conj@[1PL][EXCL]:@R.order.conj@yaahk VAIObviative1 ;
 @R.order.conj@[1PL][INCL]:@R.order.conj@yahk VAIObviative1 ;
 @R.order.conj@[2PL]:@R.order.conj@yehk VAIObviative1 ;
-@R.order.conj@@D.person@[3PL]:@R.order.conj@chik VAIObviative1 ;
+@R.order.conj@[3PL]:@R.order.conj@chik VAIObviative1 ;
 
 LEXICON VTIPersonMarking 
 @R.order.indep@@R.person.ni@[1SG][3-OBJ]:@R.order.indep@@R.person.ni@een EndVerb ;
@@ -345,4 +343,4 @@ LEXICON VTAObviative
 @R.obv@[OBV]:@R.obv@ EndVerb ;
 
 LEXICON EndVerb
-0 # ;
+%> # ;
