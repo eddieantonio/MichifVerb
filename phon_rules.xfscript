@@ -1,4 +1,4 @@
-define Voiced g | d | b | z | ;
+define Voiced g | d | b | z ;
 define Vowel a | e | i | o | u ;
 
 
