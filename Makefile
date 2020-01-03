@@ -1,4 +1,7 @@
-MichifVerbs.fomabin:
+all: michif.fomabin
+
+michif.fomabin: build.fomascript phon_rules.xfscript MichifVerbs.fomabin
+	foma -l "build.fomascript" -e "save stack $@" -s
 
 %.fomabin: %.lexc
 	foma -e "read lexc $<" -e "save stack $@" -s
@@ -17,4 +20,4 @@ sigma: MichifVerbs.fomabin
 
 # Always try to recreate plain-text, even if it is already up-to-date.
 .PHONY: plain-text.txt
-.PHONY: qa sigma test
+.PHONY: all qa sigma test

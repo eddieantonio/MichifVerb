@@ -1,0 +1,34 @@
+# Assembles the final transducer
+#
+# NOTE: requires that MichifVerb.fomabin is compiled.
+load stack MichifVerbs.fomabin
+define Lexicon;
+
+# Imports a bunch of phonological rules.
+source phon_rules.xfscript
+
+# If there are any morpheme boundaries left after processing phonological
+# rules, get rid of 'em!
+define RemoveMorphemeBoundaries [ %< | %> ] -> 0;
+
+# Remember to add phonlogical rules here!!!
+define Grammar Lexicon          .o.
+               TInsertion       .o.
+               KVoicing         .o.
+               TVoicing         .o.
+               BVoicing         .o.
+               SVoicing         .o.
+               NiDeletion       .o.
+               KiDeletion       .o.
+               WDeletion        .o.
+               eeiVowelMerge    .o.
+               eeeeVowelMerge   .o.
+               eeeVowelMerge    .o.
+               oiMerge          .o.
+               oeeMerge         .o.
+               oaaMerge         .o.
+               aoMerge          .o.
+               RemoveMorphemeBoundaries;
+
+regex Grammar;
+
