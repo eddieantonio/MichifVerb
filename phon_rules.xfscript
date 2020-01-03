@@ -1,23 +1,44 @@
-define Voiced g | d | b | z ;
-define Vowel a | e | i | o | u ;
+# Michif phonological rules
+# Author: Fineen Davis <Fineen.Davis@nrc-cnrc.gc.ca>
+# Contributors:
+#  - Eddie Antonio Santos <Eddie.Santos@nrc-cnrc.gc.ca>
+#
+# TODO: cite sources!
+
+################################# Constants ##################################
+define Voiced   g | d | b | z ;
+define Vowel    a | e | i | o | u ;
 
 
+############################## Epenthesis rules ##############################
 
-define TInsertion [..] -> t || n i | k i "<" _ Vowel ;  
+# TODO: explain; cite source, give example
+define TInsertion [..] -> t || n i | k i "<" _ Vowel ;
 
+
+############################### Voicing rules ################################
+
+# TODO: explain; cite source, give example
 define KVoicing k -> g || n i "<" _ Vowel ;
 define TVoicing t -> d || n i "<" _ Vowel ;
 define BVoicing p -> b || n i "<" _ Vowel ;
 define SVoicing s -> z || n i "<" _ Vowel ;
 
-define NiDeletion n i -> 0 || _ "<" Voiced Vowel ;
-define KiDeletion k i -> 0 || _ "<" k ;                
-define WDeletion w -> 0 || _ ">" ;
 
-define eeiVowelMerge i -> 0 || e e ">" | e e "<" _ ;
+############################### Elision rules ################################
+
+# TODO: explain; cite source, give example
+define NiDeletion n i -> 0 || _ "<" Voiced Vowel ;
+define KiDeletion k i -> 0 || _ "<" k ;
+define WDeletion    w -> 0 || _ ">" ;
+
+################################ Vowel merges ################################
+
+# TODO: explain; cite source, give example
+define eeiVowelMerge    i -> 0 || e e ">" | e e "<" _ ;
 define eeeeVowelMerge e e -> 0 || e e _ ;
-define eeeVowelMerge e -> 0 || e e _ ;
-define oiMerge i -> 0 || o ">" | o "<" _ ;
-define oeeMerge o -> 0 || _ ">" e e | "<" e e ;
-define oaaMerge o -> 0 || _ ">" a a | ">" a a ;
-define aoMerge o -> 0 || a "<" | a ">" _ ;
+define eeeVowelMerge    e -> 0 || e e _ ;
+define oiMerge          i -> 0 || o ">" | o "<" _ ;
+define oeeMerge         o -> 0 || _ ">" e e | "<" e e ;
+define oaaMerge         o -> 0 || _ ">" a a | ">" a a ;
+define aoMerge          o -> 0 || a "<" | a ">" _ ;
