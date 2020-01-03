@@ -5,4 +5,4 @@
 *.fomabin
 
 # Pairs
-plain-text.txt
+plain-text*.txt

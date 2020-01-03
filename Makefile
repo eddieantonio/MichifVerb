@@ -6,10 +6,13 @@ michif.fomabin: build.fomascript phon_rules.xfscript MichifVerbs.fomabin
 %.fomabin: %.lexc
 	foma -e "read lexc $<" -e "save stack $@" -s
 
-plain-text.txt: MichifVerbs.fomabin
+plain-text.txt: michif.fomabin
 	./libexec/print-pairs.py $< | tee $@
 
-test: plain-text.txt
+plain-text-no-phonology.txt: MichifVerbs.fomabin
+	./libexec/print-pairs.py $< > $@
+
+test: plain-text.txt plain-text-no-phonology.txt
 
 qa: MichifVerbs.lexc
 	./libexec/check-flags.py $<
