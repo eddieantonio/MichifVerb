@@ -1,13 +1,12 @@
 os: osx
 # macOS 10.14 Mojave
 osx_image: xcode11.3
-language: python
-python:
-- 3.7
+language: shell
 addons:
   homebrew:
     packages:
     - foma
+    - python3
 
 script:
 - make qa
