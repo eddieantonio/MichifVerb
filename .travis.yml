@@ -1,16 +1,23 @@
 os: osx
+# macOS 10.14 Mojave
+osx_image: xcode11.3
 language: python
 python:
-- '3.8'
-install: brew install foma
+- 3.7
+addons:
+  homebrew:
+    packages:
+    - foma
+
 script:
 - make qa
 - make
 - make test
+
 before_deploy:
 - git config --local user.email "builds@travis-ci.com"
 - git config --local user.name "Travis CI"
-- export TRAVIS_TAG="$(git log --format=%h -1)-$TRAVIS_BUILD_NUMBER"
+- export TRAVIS_TAG="$(git log --format=%h -1)-$TRAVIS_JOB_NUMBER"
 - git tag $TRAVIS_TAG
 deploy:
   provider: releases
