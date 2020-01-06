@@ -11,7 +11,6 @@ addons:
 script:
 - make qa
 - make
-- make test
 
 before_deploy:
 - git config --local user.email "builds@travis-ci.com"
@@ -22,6 +21,7 @@ deploy:
   provider: releases
   api_key:
     secure: cYpV/y3Xlcd1yJMyxlMyPdrKmlFPZqZubjU1Nix27yVoO++c/MbuPMoY1O4bVnUP4uyNcxWqYH9VYCmCMWsxcWLubhLoGjdO8V6PpXkRmayxZ7mIQ0algBCSXKExDqDf/WsnrRTvtj+4xbMM1b5WHx76weuz8c7vuFVidARUBjt6GSjay4ax8saCez5SqmZRRfv4Tt2Nzt1+JKkN8I62zNvwcn9DbE1O4LEwNdxqdr3hHOkUOsMh6Ih7yyvi5W4sOb6v/PrJ2+PZVsrWxhgj+oCrkjgc61ESgfg9XpFdEIk3d+waxOXh5FdwZAQO3mdORBRa7+a55qcnzioe9s/KFJzpmsgMN+bZ89YYYfKHn2NO5l+TFXZJ/79dgRy/7+0UVBcdyXoMsFWFAvgLuZBgbUY66Lsn4b6KzowfU19b46ChJB9asjQoMTwppL4ljmclVTabKL7eB5eMlAiT06mzE/ii5Nj5q4k8pC5vyYm2TxXiNF1SAzber/pYNFfKabdpbvB7MAX2iFzf4UBr1oVJq5k242ttI7fdpZT4PbUwroTOpAMEHIn5IcAr/9XshXwBF78th5QZ4Wb1zcMlKszMy8LQA8GEhhA+u8nxSaAoJlW1pFb6EnVHzssXd2uF81Bu2+a2uj5X3OFUESV2D0V4dQPNDOZjXznqeYSclfgwakc=
+  skip_cleanup: true
   file: michif.fomabin
   on:
     repo: eddieantonio/MichifVerb

@@ -1,5 +1,7 @@
 # MichifVerb
 
+[![Build Status](https://travis-ci.org/eddieantonio/MichifVerb.svg?branch=master)](https://travis-ci.org/eddieantonio/MichifVerb)
+
 # Requirements
 
  - Foma
