@@ -3,38 +3,61 @@
 # Contributors:
 #  - Eddie Antonio Santos <Eddie.Santos@nrc-cnrc.gc.ca>
 #
-# TODO: cite sources!
+# Phonological rules based on the following sources:
+# Rosen, N. (2007). Domains in michif phonology (Order No. NR27995).
+# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
 
 ################################# Constants ##################################
-define Voiced   g | d | b | z ;
-define Vowel    a | e | i | o | u ;
 
+define Vowel    a | e | i | o | u ;
 
 ############################## Epenthesis rules ##############################
 
-# TODO: explain; cite source, give example
+# Rosen, N. (2007). Domains in michif phonology (Order No. NR27995).
+# 't' is epenthesized between the 'ni'/'ki' morphemes and a vowel
+# Example 
+# ki-aja-n -> kitajan
+# Example 
+# ni-aja-n -> nitajan (see NiDeletion for final surface form)
+
 define TInsertion [..] -> t || n i | k i "<" _ Vowel ;
-
-
-############################### Voicing rules ################################
-
-# TODO: explain; cite source, give example
-define KVoicing k -> g || n i "<" _ Vowel ;
-define TVoicing t -> d || n i "<" _ Vowel ;
-define BVoicing p -> b || n i "<" _ Vowel ;
-define SVoicing s -> z || n i "<" _ Vowel ;
-
 
 ############################### Elision rules ################################
 
-# TODO: explain; cite source, give example
-define NiDeletion n i -> 0 || _ "<" Voiced Vowel ;
+# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# Voiceless consonants are voiced when preceeded by the 'ni' morpheme and followed by a vowel. The ni morpheme is then deleted.
+#Example
+# ni-kii-waapam-aa-w -> giiwaapamaaw
+
+define NiKDeletion n i "<" k -> g || _ Vowel ;
+define NiTDeletion n i "<" t -> d || _ Vowel ;
+define NiPDeletion n i "<" p -> b || _ Vowel ;
+define NiSDeletion n i "<" s -> z || _ Vowel ;
+
+# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# The 'ki' morpheme is deleted when followed by a 'k'
+# Example
+# ki-kiiw-aa-n -> kiiwaan
+
 define KiDeletion k i -> 0 || _ "<" k ;
+
+# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# Word-final 'w' is deleted
+# Example
+# ee-wapam-a-ihkw -> eewapamajihk
+
 define WDeletion    w -> 0 || _ ">" ;
 
 ################################ Vowel merges ################################
 
-# TODO: explain; cite source, give example
+# Vowel merging rules are based on Michif language data in:
+# Souter, H. (2010). An Index of Verb Finals in Michif. An Inventory of Abstract and Complex Verb Finals
+# Using the Michif Dictionary: Turtle Mountain Chippewa Cree as Corpus.
+
+# Vowel merges occur when the joining of two morphemes results in a sequence of two or more adjacent vowels
+# Example kii-miyo-eeht-am -> kiimiyeehtam
+# Example kii-piiwee-eeyim-ee-w -> kiipiiweeyimeew
+
 define eeiVowelMerge    i -> 0 || e e ">" | e e "<" _ ;
 define eeeeVowelMerge e e -> 0 || e e _ ;
 define eeeVowelMerge    e -> 0 || e e _ ;
@@ -42,3 +65,4 @@ define oiMerge          i -> 0 || o ">" | o "<" _ ;
 define oeeMerge         o -> 0 || _ ">" e e | "<" e e ;
 define oaaMerge         o -> 0 || _ ">" a a | ">" a a ;
 define aoMerge          o -> 0 || a "<" | a ">" _ ;
+define iiiVowelMerge    i -> 0 || i i _ ;
