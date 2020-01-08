@@ -4,8 +4,8 @@
 #  - Eddie Antonio Santos <Eddie.Santos@nrc-cnrc.gc.ca>
 #
 # Phonological rules based on the following sources:
-# Rosen, N. (2007). Domains in michif phonology (Order No. NR27995).
-# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# Rosen, N. (2007). Domains in Michif Phonology (Order No. NR27995).
+# Bakker, P. (1991). The Ojibwa Element in Michif. Algonquian Papers-Archive, 22.
 
 ################################# Constants ##################################
 
@@ -13,7 +13,7 @@ define Vowel    a | e | i | o | u ;
 
 ############################## Epenthesis rules ##############################
 
-# Rosen, N. (2007). Domains in michif phonology (Order No. NR27995).
+# Rosen, N. (2007). Domains in Michif Phonology (Order No. NR27995).
 # 't' is epenthesized between the 'ni'/'ki' morphemes and a vowel
 # Example 
 # ki-aja-n -> kitajan
@@ -24,9 +24,9 @@ define TInsertion [..] -> t || n i | k i "<" _ Vowel ;
 
 ############################### Elision rules ################################
 
-# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# Bakker, P. (1991). The Ojibwa Element in Michif. Algonquian Papers-Archive, 22.
 # Voiceless consonants are voiced when preceeded by the 'ni' morpheme and followed by a vowel. The ni morpheme is then deleted.
-#Example
+# Example
 # ni-kii-waapam-aa-w -> giiwaapamaaw
 
 define NiKDeletion n i "<" k -> g || _ Vowel ;
@@ -34,14 +34,14 @@ define NiTDeletion n i "<" t -> d || _ Vowel ;
 define NiPDeletion n i "<" p -> b || _ Vowel ;
 define NiSDeletion n i "<" s -> z || _ Vowel ;
 
-# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# Bakker, P. (1991). The Ojibwa Element in Michif. Algonquian Papers-Archive, 22.
 # The 'ki' morpheme is deleted when followed by a 'k'
 # Example
 # ki-kiiw-aa-n -> kiiwaan
 
 define KiDeletion k i -> 0 || _ "<" k ;
 
-# Bakker, P. (1991). The Ojibwa Element in Mitchif. Algonquian Papers-Archive, 22.
+# Bakker, P. (1991). The Ojibwa Element in Michif. Algonquian Papers-Archive, 22.
 # Word-final 'w' is deleted
 # Example
 # ee-wapam-a-ihkw -> eewapamajihk

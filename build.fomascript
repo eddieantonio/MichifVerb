@@ -14,11 +14,10 @@ define RemoveMorphemeBoundaries [ %< | %> ] -> 0;
 # Remember to add phonlogical rules here!!!
 define Grammar Lexicon          .o.
                TInsertion       .o.
-               KVoicing         .o.
-               TVoicing         .o.
-               BVoicing         .o.
-               SVoicing         .o.
-               NiDeletion       .o.
+               NiKDeletion      .o.
+               NiTDeletion       .o.
+               NiPDeletion       .o.
+               NiSDeletion       .o.
                KiDeletion       .o.
                WDeletion        .o.
                eeiVowelMerge    .o.
