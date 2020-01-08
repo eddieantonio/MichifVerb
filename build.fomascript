@@ -15,9 +15,9 @@ define RemoveMorphemeBoundaries [ %< | %> ] -> 0;
 define Grammar Lexicon          .o.
                TInsertion       .o.
                NiKDeletion      .o.
-               NiTDeletion       .o.
-               NiPDeletion       .o.
-               NiSDeletion       .o.
+               NiTDeletion      .o.
+               NiPDeletion      .o.
+               NiSDeletion      .o.
                KiDeletion       .o.
                WDeletion        .o.
                eeiVowelMerge    .o.

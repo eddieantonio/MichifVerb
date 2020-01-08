@@ -47,6 +47,12 @@ for line in lookups.decode("UTF-8").split("\n"):
     analysis, _tab, wordform = line.partition("\t")
     analysis2wordforms[analysis].add(wordform)
 
+if len(analysis2wordforms) <= 0:
+    print("Tranducer generates 0 words:", fomabin, file=sys.stderr)
+    print("(there's probably something wrong with the xfst script)", file=sys.stderr)
+    sys.exit(1)
+
+
 # Figure out how wide the first column should be:
 max_analysis_len = len(max(analysis2wordforms.keys(), key=len))
 
